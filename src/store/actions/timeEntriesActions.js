@@ -3,7 +3,7 @@ export const fetchTimeEntries = (startDate, endDate) => {
         dispatch({ type: 'FETCH_TIME_ENTRIES_REQUEST' });
 
         try {
-            const response = await fetch(`http://localhost:3001/api/time-entries?from=${startDate}&to=${endDate}`);
+            const response = await fetch(`https://harvest-tracker.onrender.com/api/time-entries?from=${startDate}&to=${endDate}`);
             const data = await response.json();
 
             if (response.ok) {
