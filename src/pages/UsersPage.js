@@ -19,7 +19,7 @@ const UsersPage = () => {
     };
 
     return (
-        <div>
+        <div className='container mx-auto p-4'>
             <h1>Users</h1>
             <ul>
                 {users.map(user => (

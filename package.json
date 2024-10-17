@@ -23,8 +23,7 @@
     "start": "serve -s build",
     "test": "react-scripts test",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "api": "node harvest-api.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +49,6 @@
     "concurrently": "^9.0.1",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14"
-  }
+  },
+  "proxy": "https://harvest-tracker-api.onrender.com"
 }
