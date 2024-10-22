@@ -1,7 +1,11 @@
 export const fetchTimeEntries = (userId, startDate, endDate) => {
     console.log("fetchTimeEntries", userId, startDate, endDate);
 
-    const useStartDate = startDate ? startDate : "2024-01-01";
+    // Example usage
+    const lastMonday = getPreviousMonday();
+    console.log(lastMonday.toDateString());  // Outputs the previous Monday's date
+
+    const useStartDate = startDate ? startDate : lastMonday;
 
     console.log("useStartDate", useStartDate);
 
@@ -23,3 +27,19 @@ export const fetchTimeEntries = (userId, startDate, endDate) => {
         }
     };
 };
+
+function getPreviousMonday() {
+    const today = new Date();
+
+    // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+    const currentDay = today.getDay();
+
+    // Calculate the number of days to subtract to get to the previous Monday
+    // If today is Monday, we want to go back 7 days to the previous Monday
+    const daysToPreviousMonday = currentDay === 0 ? 6 : currentDay + 6;
+
+    // Set the date to the Monday of the previous week
+    const previousMonday = new Date(today.setDate(today.getDate() - daysToPreviousMonday));
+
+    return previousMonday;
+}
