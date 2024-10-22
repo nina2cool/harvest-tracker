@@ -13,8 +13,8 @@ export const fetchTimeEntries = (userId, startDate, endDate) => {
         dispatch({ type: 'FETCH_TIME_ENTRIES_REQUEST' });
 
         try {
-            // const response = await fetch(`https://harvest-tracker-api.onrender.com/api/time-entries?from=${startDate}&to=${endDate}`);
-            const response = await fetch(`http://localhost:3002/api/time-entries?from=${useStartDate}`);
+            const response = await fetch(`https://harvest-tracker-api.onrender.com/api/harvest-time-entries?from=${startDate}`);
+            // const response = await fetch(`http://localhost:3002/api/harvest-ime-entries?from=${useStartDate}`);
             const data = await response.json();
             console.log('API Response:', response.data);
             if (response.ok) {

@@ -3,8 +3,8 @@ export const fetchUsers = () => {
         dispatch({ type: 'FETCH_USERS_REQUEST' });
 
         try {
-            // const response = await fetch(`https://harvest-tracker-api.onrender.com/api/users`);
-            const response = await fetch(`http://localhost:3002/api/users`);
+            const response = await fetch(`https://harvest-tracker-api.onrender.com/api/harvest-users`);
+            // const response = await fetch(`http://localhost:3002/api/users`);
             const data = await response.json();
             console.log('API Response:', response.data);
             if (response.ok) {
