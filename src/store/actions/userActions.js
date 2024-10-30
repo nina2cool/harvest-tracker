@@ -1,19 +1,21 @@
 export const fetchUsers = () => {
     return async (dispatch) => {
-        dispatch({ type: 'FETCH_USERS_REQUEST' });
-
+        dispatch({ type: 'FETCH_USERS_REQUEST' }); // Dispatch request action
         try {
-            const response = await fetch(`https://harvest-tracker-api.onrender.com/api/harvest-users`);
-            // const response = await fetch(`http://localhost:3002/api/users`);
+            const apiUrl = process.env.ENV === "dev"
+                ? `http://localhost:3002/api/harvest-users`
+                : `https://harvest-tracker-api.onrender.com/api/harvest-users`;
+
+            console.log("API URL:", apiUrl);
+            const response = await fetch(apiUrl);
             const data = await response.json();
-            console.log('API Response:', response.data);
-            if (response.ok) {
-                dispatch({ type: 'FETCH_USERS_SUCCESS', payload: data.users });
-            } else {
-                dispatch({ type: 'FETCH_USERS_FAILURE', payload: data.error });
-            }
+
+            dispatch({ type: 'FETCH_USERS_SUCCESS', payload: data.users }); // Dispatch success action
         } catch (error) {
-            dispatch({ type: 'FETCH_USERS_FAILURE', payload: error.message });
+            dispatch({ type: 'FETCH_USERS_FAILURE', payload: error.message }); // Dispatch failure action
         }
     };
 };
+export const FETCH_USERS_REQUEST = 'FETCH_USERS_REQUEST';
+export const FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS';
+export const FETCH_USERS_FAILURE = 'FETCH_USERS_FAILURE';

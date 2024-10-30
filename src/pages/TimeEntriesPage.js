@@ -1,84 +1,76 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchTimeEntries } from '../store/actions/timeEntriesActions';
-import { fetchUsers } from '../store/actions/userActions';
-import TimeEntriesList from '../components/TimeEntriesList';
+import { fetchTimeEntriesByDate, setBillableHours, setSelectedWeek, setTimeEntriesByUser } from '../store/actions/timeEntriesActions'; // Import the new action
+import BillableHours from '../components/BillableHours'; // Import the new component
+import Loader from '../components/Loader'; // Import the Loader component
+import { calculateDates } from '../utils/functions';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { calculateBillableHours, sortEntriesByProjectCode, organizeEntriesByUser } from '../utils/functions';
 
 const TimeEntriesPage = () => {
     const dispatch = useDispatch();
-    const timeEntries = useSelector(state => state.timeEntries.timeEntries);
-    const users = useSelector(state => state.users.users);
-    const [startDate, setStartDate] = useState('');
-    const [endDate, setEndDate] = useState('');
-    const [selectedUser, setSelectedUser] = useState(''); // Keep this for initial state
-    const [loading, setLoading] = useState(true);
-    const [isSubmitted, setIsSubmitted] = useState(false); // New state variable
+    const navigate = useNavigate(); // Initialize useNavigate for navigation
+    const timeEntriesByDate = useSelector(state => state.timeEntries.timeEntriesByDate); // Get all time entries from Redux
+    const billableHours = useSelector(state => state.timeEntries.billableHours); // Get billable hours from Redux
+    const selectedWeek = useSelector(state => state.timeEntries.selectedWeek); // Get selected week from Redux
+    const [isHoursCalculated, setIsHoursCalculated] = useState(false); // State for hours calculation
+    const [loadingBillableHours, setLoadingBillableHours] = useState(false); // New state for loading billable hours
+    const [showBillableHours, setShowBillableHours] = useState(false); // State to control visibility of BillableHours
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const userSelect = e.target.elements.user; // Get the select element
-        const userId = userSelect.value; // Get the selected user ID
-        console.log("startDate", startDate);
-        console.log("endDate", endDate);
-        console.log("selectedUser", userId); // Log the selected user ID
-        dispatch(fetchTimeEntries(startDate, endDate, userId)); // Pass parameters to the action
-        setIsSubmitted(true); // Set isSubmitted to true
-        setSelectedUser(userId);
+    const handleCalculateHours = async () => {
+        setLoadingBillableHours(true); // Set loading state to true
+        setShowBillableHours(false); // Hide BillableHours component initially
+        // Fetch time entries by date first
+        const { startDate, endDate } = calculateDates(selectedWeek); // Get calculated dates
+        await dispatch(fetchTimeEntriesByDate(startDate.toISOString().split('T')[0], endDate.toISOString().split('T')[0])); // Fetch time entries by date
+        setIsHoursCalculated(true); // Set hours calculation state
+    };
+
+    const handleWeekChange = (e) => {
+        const week = e.target.value;
+        dispatch(setSelectedWeek(week)); // Dispatch action to set selected week
     };
 
     useEffect(() => {
-        const fetchData = async () => {
-            await dispatch(fetchUsers());
-            await dispatch(fetchTimeEntries());
-            setLoading(false);
-        };
-        fetchData();
-    }, [dispatch]);
+        if (isHoursCalculated) {
 
-    console.log(timeEntries);
-    console.log(users);
-    
-    if (loading) {
-        return <div>Loading...</div>;
-    }
+            // Now calculate billable hours after fetching time entries
+            const calculatedBillableHours = calculateBillableHours(timeEntriesByDate);
+
+            // Sort the calculated billable hours by project code
+            const sortedBillableHours = sortEntriesByProjectCode(calculatedBillableHours);
+            // Dispatch the action to store billable hours in Redux
+            dispatch(setBillableHours(sortedBillableHours));
+            
+            // Now organize that data by user and store it in redux as an object
+            const organizedByUser = organizeEntriesByUser(timeEntriesByDate);
+            dispatch(setTimeEntriesByUser(organizedByUser)); // Dispatch the organized entries
+            
+            setLoadingBillableHours(false); // Set loading state to false after calculation
+            setShowBillableHours(true); // Show BillableHours component after data is ready
+        }
+    }, [timeEntriesByDate, isHoursCalculated, dispatch]); // Run this effect when timeEntriesByDate or isHoursCalculated changes
 
     return (
         <div>
             <h1>Time Entries</h1>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Start Date:
-                    <input 
-                        type="date" 
-                        value={startDate} 
-                        onChange={(e) => setStartDate(e.target.value)} 
-                        required 
-                    />
-                </label>
-                <label>
-                    End Date:
-                    <input 
-                        type="date" 
-                        value={endDate} 
-                        onChange={(e) => setEndDate(e.target.value)} 
-                        required 
-                    />
-                </label>
-                <label>
-                    User:
-                    <select name="user" required> {/* Add name attribute for easy access */}
-                        <option value="">Select a user</option> {/* Optional: Add a default option */}
-                        {users.map(user => (
-                            <option key={user.id} value={user.id}>
-                                {user.first_name}
-                            </option>
-                        ))}
-                    </select>
-                </label>
-                <button type="submit">Fetch Time Entries</button>
-            </form>
-            {isSubmitted && ( // Conditionally render TimeEntriesList
-                <TimeEntriesList timeEntries={timeEntries} startDate={startDate} endDate={endDate} selectedUser={selectedUser} />
+
+            <h2>Step 1: Fetch Time Entries by Date</h2>
+
+            <label>
+                Week:
+                <select value={selectedWeek} onChange={handleWeekChange}>
+                    <option value="thisWeek">This Week</option>
+                    <option value="lastWeek">Last Week</option>
+                </select>
+            </label>
+
+            <button onClick={handleCalculateHours}>Calculate Hours</button> {/* Button to calculate billable hours */}
+
+            {loadingBillableHours ? <Loader /> : showBillableHours && <BillableHours billableHours={billableHours} />} {/* Display the billable hours only when not loading and data is ready */}
+
+            {showBillableHours && ( // Only show the button if BillableHours is visible
+                <button onClick={() => navigate('/time-entries-step-2')}>Go to Step 2</button> // Button to navigate to Step 2
             )}
         </div>
     );
