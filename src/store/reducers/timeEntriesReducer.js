@@ -1,16 +1,17 @@
-import { SET_SELECTED_ENTRIES, SET_BILLABLE_HOURS, SET_SELECTED_WEEK, SET_ENTRY_TYPE, SET_TIME_ENTRIES_BY_USER, SET_ADJUSTED_MINUTES_BY_USER, SET_SELECTED_USER_ID } from '../actions/timeEntriesActions';
+import { SET_SELECTED_ENTRIES, SET_BILLABLE_HOURS, SET_SELECTED_WEEK, SET_ENTRY_TYPE, SET_TIME_ENTRIES_BY_USER, SET_ADJUSTED_MINUTES_BY_USER, SET_SELECTED_USER_ID, SET_SPLIT_TIME_ENTRIES } from '../actions/timeEntriesActions';
 
 const initialState = {
     timeEntriesByUser: [],
     timeEntriesByDate: [],
-    selectedEntries: [],
+    selectedHarvestEntries: [],
     billableHours: [],
     loading: false,
     error: null,
-    selectedWeek: 'lastWeek', // Default value
+    selectedWeek: 'thisWeek', // Default value
     entryType: null, // New state for entry type
     adjustedMinutesByUser: [],
     selectedUserId: null,
+    splitTimeEntries: [],
 };
 
 const timeEntriesReducer = (state = initialState, action) => {
@@ -30,7 +31,7 @@ const timeEntriesReducer = (state = initialState, action) => {
         case SET_SELECTED_ENTRIES:
             return {
                 ...state,
-                selectedEntries: action.payload, // Update selected entries in the state
+                selectedHarvestEntries: action.payload, // Update selected entries in the state
             };
         case SET_BILLABLE_HOURS:
             return {
@@ -61,6 +62,11 @@ const timeEntriesReducer = (state = initialState, action) => {
             return {
                 ...state,
                 selectedUserId: action.payload, // Update the selected user ID
+            };
+        case SET_SPLIT_TIME_ENTRIES:
+            return {
+                ...state,
+                splitTimeEntries: action.payload, // Ensure this is always an array
             };
         default:
             return state;

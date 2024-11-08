@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { useDispatch } from 'react-redux'; // Import useDispatch
-import { setSelectedEntries, setEntryType } from '../store/actions/timeEntriesActions'; // Import the actions
+import { setselectedHarvestEntries, setEntryType } from '../store/actions/timeEntriesActions'; // Import the actions
+import { Button } from 'react-bootstrap';
 
 const TimeEntriesList = ({ userTimeEntries }) => {
 
@@ -9,10 +10,10 @@ const TimeEntriesList = ({ userTimeEntries }) => {
 
     const navigate = useNavigate(); // Use useNavigate instead of useHistory
     const dispatch = useDispatch(); // Initialize dispatch
-    const [selectedEntries, setSelectedEntriesState] = useState({});
+    const [selectedHarvestEntries, setselectedHarvestEntriesState] = useState({});
 
     const handleCheckboxChange = (entryId) => {
-        setSelectedEntriesState(prevState => ({
+        setselectedHarvestEntriesState(prevState => ({
             ...prevState,
             [entryId]: !prevState[entryId] // Toggle the selected state
         }));
@@ -20,41 +21,46 @@ const TimeEntriesList = ({ userTimeEntries }) => {
 
     const handleSelectAll1x1 = () => {
         const entriesToSelect = userTimeEntries.filter(entry => entry.notes.includes("1x1")); // Filter entries with "1x1" in the description
-        const newSelectedEntries = {};
+        const newselectedHarvestEntries = {};
 
         entriesToSelect.forEach(entry => {
-            newSelectedEntries[entry.id] = true; // Mark the entry as selected
+            newselectedHarvestEntries[entry.id] = true; // Mark the entry as selected
         });
 
-        setSelectedEntriesState(newSelectedEntries); // Update the selected entries state
+        setselectedHarvestEntriesState(newselectedHarvestEntries); // Update the selected entries state
         dispatch(setEntryType('1x1')); // Dispatch action to set entry type to '1x1'
     };
 
     const handleSelectAllBillToClient = () => {
         const entriesToSelect = userTimeEntries.filter(entry => entry.task && entry.task.name && entry.task.name.includes("bill to client")); // Filter entries with "bill to client" in task.name
-        const newSelectedEntries = {};
+        const newselectedHarvestEntries = {};
 
         entriesToSelect.forEach(entry => {
-            newSelectedEntries[entry.id] = true; // Mark the entry as selected
+            newselectedHarvestEntries[entry.id] = true; // Mark the entry as selected
         });
 
-        setSelectedEntriesState(newSelectedEntries); // Update the selected entries state
+        setselectedHarvestEntriesState(newselectedHarvestEntries); // Update the selected entries state
         dispatch(setEntryType('bill to client')); // Dispatch action to set entry type to 'bill to client'
+    };
+
+    // Function to clear all selected checkboxes
+    const handleClearSelections = () => {
+        setselectedHarvestEntriesState({}); // Reset selected entries state to an empty object
     };
 
     const handleSubmit = () => {
         // Create an array of selected entries
-        const entriesToDisplay = Object.keys(selectedEntries)
-            .filter(entryId => selectedEntries[entryId]) // Filter selected entries
+        const entriesToDisplay = Object.keys(selectedHarvestEntries)
+            .filter(entryId => selectedHarvestEntries[entryId]) // Filter selected entries
             .map(entryId => userTimeEntries.find(entry => entry.id.toString() === entryId)); // Ensure comparison is consistent
 
         console.log("entriesToDisplay", entriesToDisplay);
         
         // Dispatch the action to store selected entries in Redux
-        dispatch(setSelectedEntries(entriesToDisplay));
+        dispatch(setselectedHarvestEntries(entriesToDisplay));
 
-        // Navigate to the SelectedEntries component
-        navigate('/time-entries-step-3', { state: { selectedEntries: entriesToDisplay } }); // Use navigate instead of history.push
+        // Navigate to the selectedHarvestEntries component
+        navigate('/time-entries-step-3', { state: { selectedHarvestEntries: entriesToDisplay } }); // Use navigate instead of history.push
     };
 
     // Group time entries by date and calculate total hours
@@ -79,8 +85,9 @@ const TimeEntriesList = ({ userTimeEntries }) => {
         <div>
             <h2>Time Entries</h2>
             <h3>Total Hours for All Entries: {totalHours} hours</h3> {/* Display total hours for all entries */}
-            <button onClick={handleSelectAll1x1}>Select All 1x1 Entries</button> {/* Button to select all entries with "1x1" in the description */}
-            <button onClick={handleSelectAllBillToClient}>Select All "Bill to Client" Entries</button> {/* Button to select all entries with "bill to client" in task.name */}
+            <Button variant="primary" onClick={handleSelectAll1x1}>Select All 1x1 Entries</Button> {/* Button to select all entries with "1x1" in the description */}
+            <Button variant="primary" onClick={handleSelectAllBillToClient}>Select All "Bill to Client" Entries</Button> {/* Button to select all entries with "bill to client" in task.name */}
+            <Button variant="secondary" onClick={handleClearSelections}>Clear All Selections</Button> {/* Button to clear all selected checkboxes */}
             {Object.keys(groupedEntries).length > 0 ? (
                 Object.keys(groupedEntries).map(date => {
                     const dailyTotalHours = groupedEntries[date].totalHours.toFixed(2); // Round daily total hours to two decimal places
@@ -98,11 +105,11 @@ const TimeEntriesList = ({ userTimeEntries }) => {
                                 </thead>
                                 <tbody>
                                     {groupedEntries[date].entries.map(entry => (
-                                        <tr key={entry.id} className={selectedEntries[entry.id] ? 'selected-row' : ''}>
+                                        <tr key={entry.id} className={selectedHarvestEntries[entry.id] ? 'selected-row' : ''}>
                                             <td>
                                                 <input
                                                     type="checkbox"
-                                                    checked={!!selectedEntries[entry.id]} // Check if the entry is selected
+                                                    checked={!!selectedHarvestEntries[entry.id]} // Check if the entry is selected
                                                     onChange={() => handleCheckboxChange(entry.id)} // Handle checkbox change
                                                 />
                                             </td>
@@ -119,7 +126,7 @@ const TimeEntriesList = ({ userTimeEntries }) => {
             ) : (
                 <p>No time entries found.</p>
             )}
-            <button onClick={handleSubmit}>Go to Step 3</button> {/* Button to navigate to selected entries */}
+            <Button variant="primary" onClick={handleSubmit}>Go to Step 3</Button> {/* Button to navigate to selected entries */}
         </div>
     );
 };

@@ -6,6 +6,8 @@ import Header from './components/Header'; // Import the Header component
 import './index.css';
 import TimeEntriesPage2 from './pages/TimeEntriesPage2'; // Import the new component
 import TimeEntriesPage3 from './pages/TimeEntriesPage3'; // Import the new component
+import TimeEntriesPage4 from './pages/TimeEntriesPage4'; // Import the new component
+import TasksPage from './pages/TasksPage'; // Import the new component
 import { Container } from 'react-bootstrap';
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
             <Route path="/time-entries" element={<TimeEntriesPage />} />
             <Route path="/time-entries-step-2" element={<TimeEntriesPage2 />} />
             <Route path="/time-entries-step-3" element={<TimeEntriesPage3 />} />
+            <Route path="/time-entries-step-4" element={<TimeEntriesPage4 />} />
+            <Route path="/tasks" element={<TasksPage />} />
             {/* Other routes can be added here */}
           </Routes>
         </div>

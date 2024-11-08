@@ -117,3 +117,8 @@ export const organizeEntriesByUser = (timeEntries) => {
         };
     });
 };
+
+// Function to round to the nearest 5 minutes
+export const roundToNearestFiveMinutes = (minutes) => {
+    return Math.round(minutes / 5) * 5;
+};

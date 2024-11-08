@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'; // Import useDispatch
-import SelectedEntries from '../components/SelectedEntries';
-import BillableHours from '../components/BillableHours'; // Import the BillableHours component
+import SelectedEntriesTable from '../components/SelectedEntriesTable';
 import { setAdjustedMinutesByUser } from '../store/actions/timeEntriesActions'; // Import the new action
+import { Button } from 'react-bootstrap';
+import { roundToNearestFiveMinutes } from '../utils/functions';
 
 const TimeEntriesPage3 = () => {
     const dispatch = useDispatch(); // Initialize dispatch
-    const selectedEntries = useSelector(state => state.timeEntries.selectedEntries); // Get selected entries from Redux store
+    const selectedHarvestEntries = useSelector(state => state.timeEntries.selectedHarvestEntries); // Get selected entries from Redux store
     const billableHours = useSelector(state => state.timeEntries.billableHours); // Get billable hours from Redux store
+    const entryType = useSelector(state => state.timeEntries.entryType); // Get entry type from Redux store
     const [showBillableHours, setShowBillableHours] = useState(false); // State to manage visibility of BillableHours
     const selectedUserId = useSelector(state => state.timeEntries.selectedUserId); // Get selected user ID from Redux store
 
@@ -16,13 +18,8 @@ const TimeEntriesPage3 = () => {
     };
 
     // Calculate total hours from selected entries
-    const totalSelectedHours = selectedEntries.reduce((sum, entry) => sum + entry.hours, 0);
+    const totalSelectedHours = selectedHarvestEntries.reduce((sum, entry) => sum + entry.hours, 0);
     const totalSelectedMinutes = totalSelectedHours * 60; // Convert total selected hours to minutes
-
-    // Function to round to the nearest 5 minutes
-    const roundToNearestFiveMinutes = (minutes) => {
-        return Math.round(minutes / 5) * 5;
-    };
 
     // Calculate adjusted hours and minutes for each billable project based on the total selected hours and project percentages
     const adjustedBillableHours = billableHours.map(project => {
@@ -71,11 +68,15 @@ const TimeEntriesPage3 = () => {
 
     return (
         <div>
-            {selectedEntries && selectedEntries.length > 0 ? (
+            {selectedHarvestEntries && selectedHarvestEntries.length > 0 ? (
                 <>
-                    <SelectedEntries selectedEntries={selectedEntries} /> {/* Pass selected entries to the component */}
-                    <button onClick={handleCalculateTimeSplit}>Calculate time split</button> {/* Button to calculate time split */}
-                    <button onClick={handleSaveAdjustedMinutes}>Save Adjusted Minutes</button> {/* Button to save adjusted minutes */}
+                    <SelectedEntriesTable selectedHarvestEntries={selectedHarvestEntries} /> {/* Pass selected entries to the component */}
+                    {entryType === 'bill to client' && ( // Show buttons only if entryType is billable
+                        <>
+                            <Button onClick={handleCalculateTimeSplit}>Calculate time split</Button> {/* Button to calculate time split */}
+                            <Button onClick={handleSaveAdjustedMinutes}>Save Adjusted Minutes</Button> {/* Button to save adjusted minutes */}
+                        </>
+                    )}
                     {showBillableHours && (
                         <>
                             <h4>Adjusted Billable Minutes:</h4> {/* Updated title */}

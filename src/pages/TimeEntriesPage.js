@@ -6,7 +6,9 @@ import Loader from '../components/Loader'; // Import the Loader component
 import { calculateDates } from '../utils/functions';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import { calculateBillableHours, sortEntriesByProjectCode, organizeEntriesByUser } from '../utils/functions';
-
+import { Button } from 'react-bootstrap';
+import { fetchProjects } from '../store/actions/projectActions'; // Import the fetchProjects action
+import { fetchTasks } from '../store/actions/taskActions'; // Import the fetchTasks action
 const TimeEntriesPage = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate(); // Initialize useNavigate for navigation
@@ -23,6 +25,10 @@ const TimeEntriesPage = () => {
         // Fetch time entries by date first
         const { startDate, endDate } = calculateDates(selectedWeek); // Get calculated dates
         await dispatch(fetchTimeEntriesByDate(startDate.toISOString().split('T')[0], endDate.toISOString().split('T')[0])); // Fetch time entries by date
+
+        // Fetch projects after fetching time entries
+        await dispatch(fetchProjects()); // Fetch projects from the API
+        await dispatch(fetchTasks()); // Fetch tasks from the API
         setIsHoursCalculated(true); // Set hours calculation state
     };
 
@@ -65,12 +71,12 @@ const TimeEntriesPage = () => {
                 </select>
             </label>
 
-            <button onClick={handleCalculateHours}>Calculate Hours</button> {/* Button to calculate billable hours */}
+            <Button onClick={handleCalculateHours}>Calculate Hours</Button> {/* Button to calculate billable hours */}
 
             {loadingBillableHours ? <Loader /> : showBillableHours && <BillableHours billableHours={billableHours} />} {/* Display the billable hours only when not loading and data is ready */}
 
             {showBillableHours && ( // Only show the button if BillableHours is visible
-                <button onClick={() => navigate('/time-entries-step-2')}>Go to Step 2</button> // Button to navigate to Step 2
+                <Button onClick={() => navigate('/time-entries-step-2')}>Go to Step 2</Button> // Button to navigate to Step 2
             )}
         </div>
     );

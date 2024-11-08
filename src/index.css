@@ -63,88 +63,21 @@ tr:hover {
   background-color: lightyellow; /* Highlight color */
 }
 
-/* Header styles */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; /* Remove default margin */
-  font-weight: bold; /* Make headers bold */
+.split-time-entry {
+  padding: 20px;
+  margin: 10px 0;
+}
+.split-time-entry-container {
+  border: 1px solid gray;
+  margin: 40px 0;
 }
 
-/* Specific styles for each header level */
-h1 {
-  font-size: 2.5rem; /* Font size for h1 */
-  color: #2c3e50; /* Darker color for h1 */
-  margin-bottom: 1rem; /* Space below h1 */
+.entry-form {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-h2 {
-  font-size: 2rem; /* Font size for h2 */
-  color: #34495e; /* Darker color for h2 */
-  margin-bottom: 0.75rem; /* Space below h2 */
-}
-
-h3 {
-  font-size: 1.75rem; /* Font size for h3 */
-  color: #4a4a4a; /* Darker color for h3 */
-  margin-bottom: 0.5rem; /* Space below h3 */
-}
-
-h4 {
-  font-size: 1.5rem; /* Font size for h4 */
-  color: #555; /* Darker color for h4 */
-  margin-bottom: 0.5rem; /* Space below h4 */
-}
-
-h5 {
-  font-size: 1.25rem; /* Font size for h5 */
-  color: #666; /* Darker color for h5 */
-  margin-bottom: 0.25rem; /* Space below h5 */
-}
-
-h6 {
-  font-size: 1rem; /* Font size for h6 */
-  color: #777; /* Darker color for h6 */
-  margin-bottom: 0.25rem; /* Space below h6 */
-}
-
-/* Body text styles */
-p {
-  font-size: 1rem; /* Font size for paragraphs */
-  margin-bottom: 1rem; /* Space below paragraphs */
-}
-
-/* Utility classes for margins and padding */
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 1rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 1rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 1rem;
+.entry-form .entry-form-inputs {
+  width: 100%;
 }

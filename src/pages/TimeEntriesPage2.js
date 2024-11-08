@@ -4,6 +4,7 @@ import { setSelectedUserId } from '../store/actions/timeEntriesActions'; // Impo
 import { fetchUsers } from '../store/actions/userActions';
 import TimeEntriesList from '../components/TimeEntriesList';
 import Loader from '../components/Loader'; // Import the Loader component
+import { Button } from 'react-bootstrap';
 
 const TimeEntriesPage2 = () => {
     
@@ -70,7 +71,7 @@ const TimeEntriesPage2 = () => {
                         ))}
                     </select>
                 </label>
-                <button type="submit">Fetch Time Entries</button>
+                <Button type="submit">Fetch Time Entries</Button>
             </form>
 
             {loadingTimeEntries ? (

@@ -61,7 +61,7 @@ export const fetchTimeEntriesByDate = (startDate, endDate) => {
 
 export const SET_SELECTED_ENTRIES = 'SET_SELECTED_ENTRIES';
 
-export const setSelectedEntries = (entries) => ({
+export const setselectedHarvestEntries = (entries) => ({
     type: SET_SELECTED_ENTRIES,
     payload: entries,
 });
@@ -106,4 +106,11 @@ export const SET_SELECTED_USER_ID = 'SET_SELECTED_USER_ID';
 export const setSelectedUserId = (id) => ({
     type: SET_SELECTED_USER_ID,
     payload: id,
+});
+
+export const SET_SPLIT_TIME_ENTRIES = 'SET_SPLIT_TIME_ENTRIES';
+
+export const setSplitTimeEntries = ( entry) => ({
+    type: SET_SPLIT_TIME_ENTRIES,
+    payload: entry,
 });
