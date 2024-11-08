@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { roundToNearestFiveMinutes } from '../utils/functions';
-import { Button, Form, Table } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { testData } from '../utils/testData';
+import HarvestEntryTable from '../components/HarvestEntryTable';
 
 const TimeEntriesPage4 = () => {
     const [inputValues, setInputValues] = useState({});
-    const [newHarvestEntries, setNewHarvestEntries] = useState({});
+    const [newHarvestEntries, setNewHarvestEntries] = useState([]);
     const [savedEntries, setSavedEntries] = useState({});
     const [showHarvestEntries, setShowHarvestEntries] = useState(false);
 
@@ -14,18 +15,7 @@ const TimeEntriesPage4 = () => {
     const timeEntriesByUser = testData.timeEntries.timeEntriesByUser;
     const allProjectsArray = testData.projects.allProjects;
 
-    console.log("splitTimeEntries", splitTimeEntries);
-
-    useEffect(() => {
-        const newHarvestEntries = {};
-        splitTimeEntries.forEach(entry => {
-            const entryId = entry.originalEntry.id;
-            newHarvestEntries[entryId] = {};
-        });
-
-        console.log("newHarvestEntries", newHarvestEntries);
-        setNewHarvestEntries(newHarvestEntries); // Update the state with the new object
-    }, [splitTimeEntries]); // Dependencies to recalculate when these change
+    // console.log("splitTimeEntries", splitTimeEntries);
 
     const handleInputChange = (entryId, projectCode, value) => {
         setInputValues(prev => ({
@@ -39,30 +29,43 @@ const TimeEntriesPage4 = () => {
 
     const handleSave = (event, entryId) => {
         event.preventDefault();
-        const projectsData = {};
-        const originalEntry = splitTimeEntries.find(entry => entry.originalEntry.id === entryId);
-        const userId = originalEntry?.originalEntry.user.id;
-        const projectId = originalEntry?.originalEntry.project.id;
-        const taskId = originalEntry?.originalEntry.task.id;
-        const notes = `TEST - ${originalEntry?.originalEntry.notes}`;
-        const spentDate = originalEntry?.originalEntry.spent_date;
-
+        
+        // Initialize an array to hold the project data
+        const currentHarvestEntries = [];
+        
+        // Loop through inputValues and create an array of project data
         Object.entries(inputValues[entryId] || {}).forEach(([projectCode, confirmedMinutes]) => {
-            projectsData[projectCode] = {
-                confirmedMinutes: parseInt(confirmedMinutes) || 0,
-                userId: userId,
-                projectId: projectId,
-                taskId: taskId,
-                spentDate: spentDate,
-                hours: confirmedMinutes / 60,
-                notes: notes,
+            
+            let originalEntry = splitTimeEntries.find(entry => entry.originalEntry.id === entryId);
+            console.log("line41", event, entryId, originalEntry);
+
+            let userId = originalEntry?.originalEntry.user.id;
+
+            // Find the project using projectCode
+            const matchingProject = allProjectsArray.find(project => project.code === projectCode);
+            let projectId = matchingProject ? matchingProject.id : originalEntry?.originalEntry.project.id;
+            
+            let taskId = originalEntry?.originalEntry.task.id;
+            let notes = `TEST - ${originalEntry?.originalEntry.notes}`;
+            let spentDate = originalEntry?.originalEntry.spent_date;
+            
+            let entryData = {
+                "user_id": userId,
+                "project_id": projectId,
+                "task_id": taskId,
+                "spent_date": spentDate,
+                "hours": parseFloat((confirmedMinutes / 60).toFixed(2)),
+                "notes": notes,
             };
+            currentHarvestEntries.push(entryData); // Push the project data into the array
         });
 
-        setNewHarvestEntries(prev => ({
+        console.log("currentHarvestEntries", currentHarvestEntries);
+        // Update the state with the new array of harvest entries
+        setNewHarvestEntries(prev => [
             ...prev,
-            [entryId]: projectsData
-        }));
+            ...currentHarvestEntries // Append the new entries to the existing array
+        ]);
 
         setSavedEntries(prev => ({
             ...prev,
@@ -83,37 +86,35 @@ const TimeEntriesPage4 = () => {
 
     // Function to post newHarvestEntries to the API
     const postNewHarvestEntries = async () => {
-
-        const testNewEntry = {
-            userId: '3145393',
-            projectId: '39573743',
-            taskId: '23236095',
-            spentDate: '2024-11-08',
-            hours: 0.5,
-            notes: 'TEST - if you see this, the API call worked',
-        };
-
+        console.log(JSON.stringify(newHarvestEntries));
+        
         try {
-            const response = await fetch('https://harvest-tracker-api.onrender.com/api/create-harvest-time-entries', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(testNewEntry),
-            });
+            for (const entry of newHarvestEntries) {
+                console.log("submitting post request for entry", entry);
+                console.log(JSON.stringify(entry));
+                // const response = await fetch('https://harvest-tracker-api.onrender.com/api/create-harvest-time-entries', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json',
+                //     },
+                //     body: JSON.stringify(entry), // Send the current entry
+                // });
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+                // if (!response.ok) {
+                //     throw new Error(`Network response was not ok for entry: ${JSON.stringify(entry)}`);
+                // }
+
+                // const data = await response.json();
+                // console.log('Success:', data);
+                // Optionally, handle success for each entry (e.g., show a success message)
             }
-
-            const data = await response.json();
-            console.log('Success:', data);
-            // Optionally, handle success (e.g., show a success message, reset state, etc.)
         } catch (error) {
             console.error('Error posting new harvest entries:', error);
             // Optionally, handle error (e.g., show an error message)
         }
     };
+
+    console.log("newHarvestEntries", newHarvestEntries);
 
     return (
         <div className="time-entries-page">
@@ -208,7 +209,7 @@ const TimeEntriesPage4 = () => {
                                     {totalConfirmedMinutesForEntry === totalSuggestedMinutesForEntry ? (
                                         <Button type="submit">Save Entries</Button>
                                     ) : (
-                                        <Button type="submit" disabled>Save Entries (Confirmed minutes do not match suggested minutes)</Button>
+                                        <Button type="submit" disabled>Confirmed minutes are not equal to suggested minutes</Button>
                                     )}
                                 </Form>
                             </div>
@@ -216,44 +217,18 @@ const TimeEntriesPage4 = () => {
                     })}
                     {allEntriesSaved && (
                         <div>
+                            
                             <Button variant="success" onClick={handleShowEntries}>
                                 {showHarvestEntries ? "Hide New Entries" : "Create New Entries in Harvest"}
                             </Button>
                             {showHarvestEntries && (
-                                <Table striped bordered hover>
-                                    <thead>
-                                        <tr>
-                                            <th>Project Code</th>
-                                            <th>Confirmed Minutes</th>
-                                            <th>User ID</th>
-                                            <th>Project ID</th>
-                                            <th>Task ID</th>
-                                            <th>Spent Date</th>
-                                            <th>Hours</th>
-                                            <th>Notes</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {Object.entries(newHarvestEntries).map(([entryId, projects]) => (
-                                            Object.entries(projects).map(([projectCode, data]) => (
-                                                <tr key={`${entryId}-${projectCode}`}>
-                                                    <td>{projectCode}</td>
-                                                    <td>{data.confirmedMinutes}</td>
-                                                    <td>{data.userId}</td>
-                                                    <td>{data.projectId}</td>
-                                                    <td>{data.taskId}</td>
-                                                    <td>{data.spentDate}</td>
-                                                    <td>{data.hours}</td>
-                                                    <td>{data.notes}</td>
-                                                </tr>
-                                            ))
-                                        ))}
-                                    </tbody>
-                                </Table>
+                                <div>
+                                <HarvestEntryTable newHarvestEntries={newHarvestEntries} />
+                                <Button variant="primary" onClick={postNewHarvestEntries}>
+                                    Submit New Entries
+                                </Button>
+                                </div>
                             )}
-                            <Button variant="primary" onClick={postNewHarvestEntries}>
-                                Submit New Entries
-                            </Button>
                         </div>
                     )}
                 </div>
