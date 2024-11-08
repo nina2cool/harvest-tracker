@@ -9,6 +9,11 @@ import TimeEntriesPage3 from './pages/TimeEntriesPage3'; // Import the new compo
 import TimeEntriesPage4 from './pages/TimeEntriesPage4'; // Import the new component
 import TasksPage from './pages/TasksPage'; // Import the new component
 import { Container } from 'react-bootstrap';
+const express = require('express');
+const app = express();
+
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 const App = () => {
   

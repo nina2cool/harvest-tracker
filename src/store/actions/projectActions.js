@@ -1,3 +1,4 @@
+console.log(process.env.ENVIRONMENT);
 // src/redux/projectActions.js
 export const FETCH_PROJECTS_REQUEST = 'FETCH_PROJECTS_REQUEST';
 export const FETCH_PROJECTS_SUCCESS = 'FETCH_PROJECTS_SUCCESS';
@@ -22,7 +23,7 @@ export const fetchProjects = () => {
     return async (dispatch) => {
         dispatch(fetchProjectsRequest());
         try {
-            const apiUrl = process.env.ENV === "dev"
+            const apiUrl = process.env.ENVIRONMENT === "dev"
                 ? `http://localhost:3002/api/harvest-users`
                 : `https://harvest-tracker-api.onrender.com/api/harvest-projects`;
 
