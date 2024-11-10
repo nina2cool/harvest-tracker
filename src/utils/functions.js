@@ -66,6 +66,14 @@ export const sortEntriesByProjectCode = (entries) => {
     });
 };
 
+export const sortEntriesByTaskName = (tasks) => {
+    return tasks.sort((a, b) => {
+        const taskA = a.name.toLowerCase(); // Get project code for entry A
+        const taskB = b.name.toLowerCase(); // Get project code for entry B
+        return taskA.localeCompare(taskB); // Compare project codes
+    });
+};
+
 export const organizeEntriesByUser = (timeEntries) => {
     const userProjects = {}; // Object to hold user entries grouped by project code
 

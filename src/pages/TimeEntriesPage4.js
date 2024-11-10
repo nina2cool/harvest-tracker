@@ -1,80 +1,155 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { roundToNearestFiveMinutes } from '../utils/functions';
+import { roundToNearestFiveMinutes, sortEntriesByTaskName } from '../utils/functions';
 import { Button, Form } from 'react-bootstrap';
 import { testData } from '../utils/testData';
 import HarvestEntryTable from '../components/HarvestEntryTable';
+import HarvestEntryInputs from '../components/HarvestEntryInputs';
 
 const TimeEntriesPage4 = () => {
     const [inputValues, setInputValues] = useState({});
     const [newHarvestEntries, setNewHarvestEntries] = useState([]);
     const [savedEntries, setSavedEntries] = useState({});
     const [showHarvestEntries, setShowHarvestEntries] = useState(false);
+    const [tasksSelected, setTasksSelected] = useState(false);
+    const [isButtonDisabled, setIsButtonDisabled] = useState({});
 
     const splitTimeEntries = testData.timeEntries.splitTimeEntries;
     const timeEntriesByUser = testData.timeEntries.timeEntriesByUser;
     const allProjectsArray = testData.projects.allProjects;
+    const filteredTasksArray = sortEntriesByTaskName(testData.tasks.filteredTasks);
+    const successMessage = "New entry/entries saved successfully!";
+   
+    console.log("splitTimeEntries", splitTimeEntries);
 
-    // console.log("splitTimeEntries", splitTimeEntries);
+    const handleInputChange = (event, entryId, projectCode, value) => {
+        // Retrieve suggested minutes from the hidden input
+        const suggestedMinutesInput = event.target.closest('.entry-form-inputs').querySelector('input[name="suggestedMinutes"]');
+        const suggestedMinutes = parseInt(suggestedMinutesInput.value) || 0; // Default to 0 if not found
 
-    const handleInputChange = (entryId, projectCode, value) => {
+        // Retrieve projectId and projectNotes from hidden inputs
+        const projectIdInput = event.target.closest('.entry-form-inputs').querySelector('input[name="projectId"]');
+        const projectId = projectIdInput ? projectIdInput.value : ''; // Default to empty string if not found
+
+        const projectNotesInput = event.target.closest('.entry-form-inputs').querySelector('input[name="projectNotes"]');
+        const projectNotes = projectNotesInput ? projectNotesInput.value : ''; // Default to empty string if not found
+
+        const userIdInput = event.target.closest('.entry-form-inputs').querySelector('input[name="userId"]');
+        const userId = userIdInput ? userIdInput.value : ''; // Default to empty string if not found
+
+        const spentDateInput = event.target.closest('.entry-form-inputs').querySelector('input[name="spentDate"]');
+        const spentDate = spentDateInput ? spentDateInput.value : ''; // Default to empty string if not found
+
+        setIsButtonDisabled(prev => ({
+            ...prev,
+            [entryId]: false
+        }));
+
+        // Update the input values state
         setInputValues(prev => ({
             ...prev,
             [entryId]: {
                 ...prev[entryId],
-                [projectCode]: value
+                [projectCode]: {
+                    ...prev[entryId]?.[projectCode],
+                    confirmedMinutes: value,
+                    taskId: prev[entryId]?.[projectCode]?.taskId || '',
+                    suggestedMinutes: suggestedMinutes, // Add the retrieved suggested minutes here
+                    projectId: projectId, // Add the retrieved projectId here
+                    projectNotes: projectNotes, // Add the retrieved projectNotes here
+                    userId: userId, // Add the retrieved userId here
+                    spentDate: spentDate,
+                }
             }
+        }));
+    };
+
+    const handleTaskChange = (entryId, projectCode, taskId) => {
+        setInputValues(prev => ({
+            ...prev,
+            [entryId]: {
+                ...prev[entryId],
+                [projectCode]: {
+                    ...prev[entryId]?.[projectCode],
+                    taskId: taskId,
+                    confirmedMinutes: prev[entryId]?.[projectCode]?.confirmedMinutes || ''
+                }
+            }
+        }));
+
+        setTasksSelected(prev => ({
+            ...prev,
+            [entryId]: true
         }));
     };
 
     const handleSave = (event, entryId) => {
         event.preventDefault();
-        
-        // Initialize an array to hold the project data
-        const currentHarvestEntries = [];
-        
-        // Loop through inputValues and create an array of project data
-        Object.entries(inputValues[entryId] || {}).forEach(([projectCode, confirmedMinutes]) => {
-            
-            let originalEntry = splitTimeEntries.find(entry => entry.originalEntry.id === entryId);
-            console.log("line41", event, entryId, originalEntry);
 
-            let userId = originalEntry?.originalEntry.user.id;
+        const totalSuggestedMinutesForEntry = Object.values(inputValues[entryId] || {}).reduce((acc, projectData) => {
+            return acc + (parseInt(projectData.suggestedMinutes) || 0);
+        }, 0);
+        console.log("totalSuggestedMinutesForEntry", totalSuggestedMinutesForEntry);
 
-            // Find the project using projectCode
-            const matchingProject = allProjectsArray.find(project => project.code === projectCode);
-            let projectId = matchingProject ? matchingProject.id : originalEntry?.originalEntry.project.id;
-            
-            let taskId = originalEntry?.originalEntry.task.id;
-            let notes = `TEST - ${originalEntry?.originalEntry.notes}`;
-            let spentDate = originalEntry?.originalEntry.spent_date;
-            
-            let entryData = {
-                "user_id": userId,
-                "project_id": projectId,
-                "task_id": taskId,
-                "spent_date": spentDate,
-                "hours": parseFloat((confirmedMinutes / 60).toFixed(2)),
-                "notes": notes,
-            };
-            currentHarvestEntries.push(entryData); // Push the project data into the array
+        // Calculate total confirmed minutes
+        const totalConfirmedMinutesForEntry = Object.values(inputValues[entryId] || {}).reduce((acc, projectData) => {
+            return acc + (parseInt(projectData.confirmedMinutes) || 0);
+        }, 0);
+        console.log("totalConfirmedMinutesForEntry", totalConfirmedMinutesForEntry);
+
+        // Check if all required values are present in inputValues for the entryId
+        const entryValues = inputValues[entryId] || {};
+        const allValuesPresent = Object.values(entryValues).every(projectData => {
+            return (
+                projectData.confirmedMinutes &&
+                projectData.taskId &&
+                projectData.suggestedMinutes &&
+                projectData.projectId &&
+                projectData.projectNotes &&
+                projectData.userId &&
+                projectData.spentDate
+            );
         });
 
-        console.log("currentHarvestEntries", currentHarvestEntries);
-        // Update the state with the new array of harvest entries
+        if (!allValuesPresent) {
+            console.warn("Cannot save entry: Not all required values are present.");
+            return; // Exit the function if conditions are not met
+        }
+
+        // Proceed with saving the entry if all conditions are met
+        let newHarvestEntries = [];
+
+        Object.entries(inputValues[entryId] || {}).forEach(([projectCode, projectData]) => {
+            const entryData = {
+                project_id: projectData.projectId,
+                task_id: projectData.taskId,
+                spent_date: projectData.spentDate,
+                hours: projectData.confirmedMinutes / 60,
+                user_id: projectData.userId,
+                notes: projectData.projectNotes
+            };
+            newHarvestEntries.push(entryData);
+        });
+
+        console.log("newHarvestEntries", newHarvestEntries);
+
         setNewHarvestEntries(prev => [
             ...prev,
-            ...currentHarvestEntries // Append the new entries to the existing array
+            ...newHarvestEntries
         ]);
 
         setSavedEntries(prev => ({
             ...prev,
             [entryId]: true
         }));
+
+        setIsButtonDisabled(prev => ({
+            ...prev,
+            [entryId]: true
+        }));
     };
 
     console.log("newHarvestEntries", newHarvestEntries);
-    console.log("inputValues", inputValues);
 
     // Check if all entries have been saved
     const allEntriesSaved = Object.keys(savedEntries).length === splitTimeEntries.length;
@@ -92,20 +167,20 @@ const TimeEntriesPage4 = () => {
             for (const entry of newHarvestEntries) {
                 console.log("submitting post request for entry", entry);
                 console.log(JSON.stringify(entry));
-                // const response = await fetch('https://harvest-tracker-api.onrender.com/api/create-harvest-time-entries', {
-                //     method: 'POST',
-                //     headers: {
-                //         'Content-Type': 'application/json',
-                //     },
-                //     body: JSON.stringify(entry), // Send the current entry
-                // });
+                const response = await fetch('https://harvest-tracker-api.onrender.com/api/create-harvest-time-entries', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(entry), // Send the current entry
+                });
 
-                // if (!response.ok) {
-                //     throw new Error(`Network response was not ok for entry: ${JSON.stringify(entry)}`);
-                // }
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok for entry: ${JSON.stringify(entry)}`);
+                }
 
-                // const data = await response.json();
-                // console.log('Success:', data);
+                const data = await response.json();
+                console.log('Success:', data);
                 // Optionally, handle success for each entry (e.g., show a success message)
             }
         } catch (error) {
@@ -115,10 +190,13 @@ const TimeEntriesPage4 = () => {
     };
 
     console.log("newHarvestEntries", newHarvestEntries);
+    console.log("inputValues", inputValues);
+    console.log("isButtonDisabled", isButtonDisabled);
 
     return (
         <div className="time-entries-page">
             <h1>Time Entries Page 4</h1>
+            
             {splitTimeEntries.length > 0 ? (
                 <div>
                     {splitTimeEntries.map((entry, index) => {
@@ -137,38 +215,32 @@ const TimeEntriesPage4 = () => {
                                         if (matchingProject) {
                                             const projectId = matchingProject.id;
                                             const projectNotes = entry.originalEntry.notes;
+                                            const spentDate = entry.originalEntry.spent_date;
+                                            const userId = entry.originalEntry.user.id;
                                             const suggestedMinutes = roundToNearestFiveMinutes(minutes * (filteredProject.percentage / 100));
                                             totalSuggestedMinutesForEntry += suggestedMinutes;
-
+                                            
                                             return (
-                                                <div key={filteredProject.projectCode} className="entry-form-inputs">
-                                                    <span>{filteredProject.projectCode} </span>
-                                                    <input type="hidden" className="projectId" name="projectId" value={projectId} />
-                                                    <input type="hidden" className="projectNotes" name="projectNotes" value={projectNotes} />
-                                                    <input type="hidden" className="correspondingUserId" name="correspondingUserId" value={entry.correspondingUserId} />
-                                                    <label>Suggested Minutes</label>
-                                                    <input
-                                                        type="number"
-                                                        value={suggestedMinutes || 0}
-                                                        className="suggested-minutes"
-                                                        readOnly
-                                                    />
-                                                    <label>Confirmed Minutes</label>
-                                                    <input
-                                                        type="number"
-                                                        placeholder={suggestedMinutes || 0}
-                                                        required
-                                                        className="confirmed-minutes"
-                                                        value={inputValues[entry.originalEntry.id]?.[filteredProject.projectCode] || ''}
-                                                        onChange={(e) => handleInputChange(entry.originalEntry.id, filteredProject.projectCode, e.target.value)}
-                                                    />
-                                                </div>
+                                               <HarvestEntryInputs 
+                                                    filteredProject={matchingProject}
+                                                    entry={entry}
+                                                    inputValues={inputValues}
+                                                    suggestedMinutes={suggestedMinutes}
+                                                    projectCode={filteredProject.projectCode}
+                                                    handleInputChange={handleInputChange}
+                                                    handleTaskChange={handleTaskChange}
+                                                    filteredTasksArray={filteredTasksArray}
+                                                    projectId={projectId}
+                                                    projectNotes={projectNotes}
+                                                    spentDate={spentDate}
+                                                    userId={userId}
+                                                />
                                             );
                                         } else {
                                             console.warn(`No matching project found for project code: ${filteredProject.projectCode}`);
                                             return null;
                                         }
-                                    });
+                                    }); 
                                 } else {
                                     console.log(`No projects found for user ID: ${entry.correspondingUserId}`);
                                 }
@@ -177,8 +249,8 @@ const TimeEntriesPage4 = () => {
                             return <p>Need to add code for custom split type</p>
                         }
 
-                        const totalConfirmedMinutesForEntry = Object.values(inputValues[entry.originalEntry.id] || {}).reduce((acc, value) => {
-                            return acc + (parseInt(value) || 0);
+                        const totalConfirmedMinutesForEntry = Object.values(inputValues[entry.originalEntry.id] || {}).reduce((acc, projectData) => {
+                            return acc + (parseInt(projectData.confirmedMinutes) || 0);
                         }, 0);
 
                         return (
@@ -204,29 +276,28 @@ const TimeEntriesPage4 = () => {
                                     </tbody>
                                 </table>
                                 <Form className="entry-form" id={entry.originalEntry.id} onSubmit={(e) => handleSave(e, entry.originalEntry.id)}>
-                                    <h3>Suggested Minutes by Project for this entry</h3>
                                     {inputFields}
-                                    {totalConfirmedMinutesForEntry === totalSuggestedMinutesForEntry ? (
-                                        <Button type="submit">Save Entries</Button>
-                                    ) : (
-                                        <Button type="submit" disabled>Confirmed minutes are not equal to suggested minutes</Button>
-                                    )}
+                                    {isButtonDisabled[entry.originalEntry.id] && <div className="alert alert-success">{successMessage}<br></br></div>}
+                                    <Button type="submit" disabled={isButtonDisabled[entry.originalEntry.id] || !tasksSelected || totalConfirmedMinutesForEntry !== totalSuggestedMinutesForEntry}>
+                                        Save Entries
+                                    </Button>
                                 </Form>
                             </div>
                         );
                     })}
                     {allEntriesSaved && (
                         <div>
-                            
-                            <Button variant="success" onClick={handleShowEntries}>
-                                {showHarvestEntries ? "Hide New Entries" : "Create New Entries in Harvest"}
-                            </Button>
+                            {!showHarvestEntries && (
+                                <Button variant="success" onClick={handleShowEntries}>
+                                    Create New Entries in Harvest
+                                </Button>
+                            )}
                             {showHarvestEntries && (
                                 <div>
-                                <HarvestEntryTable newHarvestEntries={newHarvestEntries} />
-                                <Button variant="primary" onClick={postNewHarvestEntries}>
-                                    Submit New Entries
-                                </Button>
+                                    <HarvestEntryTable newHarvestEntries={newHarvestEntries} />
+                                    <Button variant="primary" onClick={postNewHarvestEntries}>
+                                        Submit New Entries
+                                    </Button>
                                 </div>
                             )}
                         </div>

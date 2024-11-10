@@ -62659,6 +62659,5354 @@ export const testData = {
             }
         ],
         "error": ""
+    },
+    "tasks": {
+        "loading": false,
+        "allTasks": [
+            {
+                "id": 23462377,
+                "name": "Hubspot Training",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-11-07T19:50:30Z",
+                "updated_at": "2024-11-07T19:50:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23455455,
+                "name": "VVater",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-11-06T20:40:32Z",
+                "updated_at": "2024-11-06T20:40:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23424547,
+                "name": "Hubspot Partnership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-31T21:42:42Z",
+                "updated_at": "2024-10-31T21:42:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23406293,
+                "name": "TAMU - KAMU",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-28T23:04:37Z",
+                "updated_at": "2024-10-28T23:04:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23389709,
+                "name": "Dock Sales Template - Discovery",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-24T15:41:39Z",
+                "updated_at": "2024-10-24T15:41:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23384015,
+                "name": "Senior Web Developer 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-23T15:39:32Z",
+                "updated_at": "2024-10-23T15:39:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23378908,
+                "name": "Principal Quality Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-22T17:45:17Z",
+                "updated_at": "2024-10-22T17:45:17Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23378886,
+                "name": "Principal SEO Analyst",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-22T17:42:21Z",
+                "updated_at": "2024-10-22T17:42:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23378769,
+                "name": "Principal Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-22T17:20:24Z",
+                "updated_at": "2024-10-22T17:20:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23351194,
+                "name": "Blue Orca Capital",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-16T20:16:25Z",
+                "updated_at": "2024-10-16T20:16:25Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23350076,
+                "name": "Principal Product Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-16T17:46:37Z",
+                "updated_at": "2024-10-16T17:46:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23316309,
+                "name": "head or",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-09T21:24:43Z",
+                "updated_at": "2024-10-09T21:24:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23316273,
+                "name": "Head of Product",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-10-09T21:16:14Z",
+                "updated_at": "2024-10-09T21:21:20Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 23308362,
+                "name": "Operations Cleanup",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-10-08T17:40:11Z",
+                "updated_at": "2024-10-08T17:40:11Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23264460,
+                "name": "RFP - UNA Web Development",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-30T22:19:32Z",
+                "updated_at": "2024-09-30T22:19:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252472,
+                "name": "QA Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252471,
+                "name": "Recruiting Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252470,
+                "name": "Operations Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252469,
+                "name": "Design Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252468,
+                "name": "Engineering Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23252467,
+                "name": "Product Leadership",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-27T18:44:24Z",
+                "updated_at": "2024-09-27T18:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23236095,
+                "name": "Engineering Dashboards",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-24T19:41:49Z",
+                "updated_at": "2024-09-24T19:41:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23229899,
+                "name": "Offboarding",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-23T20:39:54Z",
+                "updated_at": "2024-09-23T20:39:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23227531,
+                "name": "Holloway",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-23T14:49:40Z",
+                "updated_at": "2024-09-23T14:49:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23227513,
+                "name": "TAMU - FES",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-23T14:48:46Z",
+                "updated_at": "2024-09-23T14:48:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23210317,
+                "name": "SEO SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-18T20:56:55Z",
+                "updated_at": "2024-09-18T20:56:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23197059,
+                "name": "Bloom Systems",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-16T20:12:45Z",
+                "updated_at": "2024-09-16T20:12:45Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23196642,
+                "name": "TAMU - Facilities & Energy Services",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-16T19:22:07Z",
+                "updated_at": "2024-09-16T19:22:07Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23179623,
+                "name": "Manager of Product",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-13T21:08:14Z",
+                "updated_at": "2024-10-09T21:21:00Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 23173013,
+                "name": "Senior Product Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-12T17:46:47Z",
+                "updated_at": "2024-09-12T17:46:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23173012,
+                "name": "Product Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-12T17:46:47Z",
+                "updated_at": "2024-09-12T17:46:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23159258,
+                "name": "QA Discussions",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-10T17:28:49Z",
+                "updated_at": "2024-09-10T17:28:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23150381,
+                "name": "TAMU - Texas Aggie",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-09T19:19:52Z",
+                "updated_at": "2024-09-09T19:19:52Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23132130,
+                "name": "RFP USVI Website Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-05T21:28:26Z",
+                "updated_at": "2024-09-05T21:28:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23089290,
+                "name": "Null Time",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-08-28T16:40:33Z",
+                "updated_at": "2024-08-28T16:40:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 23083618,
+                "name": "Product Management SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-08-27T20:35:40Z",
+                "updated_at": "2024-08-27T20:35:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22964890,
+                "name": "Carrfour",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-31T21:42:44Z",
+                "updated_at": "2024-07-31T21:42:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22937800,
+                "name": "TAMU - Provost",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-25T19:48:05Z",
+                "updated_at": "2024-07-25T19:48:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22937730,
+                "name": "TAMU - Office Of Provost - CTE",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-25T19:29:47Z",
+                "updated_at": "2024-07-25T19:29:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22932927,
+                "name": "Tarleton State",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-24T19:44:24Z",
+                "updated_at": "2024-07-24T19:44:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22931988,
+                "name": "Senior Software Engineer 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-24T16:03:01Z",
+                "updated_at": "2024-07-24T16:03:01Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22931806,
+                "name": "Principal Devops Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-24T15:39:34Z",
+                "updated_at": "2024-07-24T15:39:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22928376,
+                "name": "Web Developer 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-23T23:42:57Z",
+                "updated_at": "2024-07-23T23:42:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22926036,
+                "name": "User Interface Designer 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-23T15:25:48Z",
+                "updated_at": "2024-07-23T15:25:48Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22926016,
+                "name": "Senior Product Manager 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-23T15:22:41Z",
+                "updated_at": "2024-07-23T15:22:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22921507,
+                "name": "Senior Delivery Manager 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-22T20:51:33Z",
+                "updated_at": "2024-07-22T20:51:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22920678,
+                "name": "Product Manager 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-22T18:13:55Z",
+                "updated_at": "2024-07-22T18:13:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22905950,
+                "name": "2024 - S&S Towing - Q3 Review",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-18T17:19:35Z",
+                "updated_at": "2024-07-18T17:19:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22901920,
+                "name": "Service Garage",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-17T21:08:56Z",
+                "updated_at": "2024-07-17T21:08:56Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22895703,
+                "name": "RGL/James Group",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-16T19:25:28Z",
+                "updated_at": "2024-07-16T19:25:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22876872,
+                "name": "Resilience Training",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-12T19:29:14Z",
+                "updated_at": "2024-07-12T19:29:14Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22871209,
+                "name": "RFP - HACA Web Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-11T17:27:03Z",
+                "updated_at": "2024-07-11T17:27:03Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22835302,
+                "name": "RFP - TDEM Project Constellation Services",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-03T17:27:44Z",
+                "updated_at": "2024-07-03T17:27:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22828606,
+                "name": "RFP - Georgia Technology Authority - AI Solution",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-02T17:13:13Z",
+                "updated_at": "2024-07-02T17:13:13Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22828605,
+                "name": "RFP - UTA PCMC Website Redesign",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-02T17:13:12Z",
+                "updated_at": "2024-07-02T17:13:12Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22822621,
+                "name": "AdvisorsCrypto",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-07-01T20:16:34Z",
+                "updated_at": "2024-07-01T20:16:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22784818,
+                "name": "RFP - OADC2 Web Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-24T21:10:21Z",
+                "updated_at": "2024-06-24T21:10:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22783239,
+                "name": "RFP - Uintah School District",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-24T17:20:25Z",
+                "updated_at": "2024-06-24T17:20:25Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22744072,
+                "name": "RFP - Utah Trip Planning Service",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-14T18:31:27Z",
+                "updated_at": "2024-06-14T18:31:27Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22738442,
+                "name": "RFP - Laredo Website Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-13T18:17:27Z",
+                "updated_at": "2024-06-13T18:17:27Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22728115,
+                "name": "Confluence Migration",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-11T22:04:57Z",
+                "updated_at": "2024-06-11T22:04:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22698556,
+                "name": "Time Tracking / Review",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-05T15:00:40Z",
+                "updated_at": "2024-06-05T15:00:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22687314,
+                "name": "Signatures",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-03T21:51:36Z",
+                "updated_at": "2024-06-03T21:51:36Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22683233,
+                "name": "Quality Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-06-03T14:26:29Z",
+                "updated_at": "2024-06-03T14:26:29Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22674684,
+                "name": "Senior Copywriter",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-31T19:38:31Z",
+                "updated_at": "2024-08-13T18:44:32Z",
+                "default_hourly_rate": 100
+            },
+            {
+                "id": 22674325,
+                "name": "TAMU - School of Forensic Nursing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-31T18:42:43Z",
+                "updated_at": "2024-05-31T18:42:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22674324,
+                "name": "TAMU - Galveston",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-31T18:42:43Z",
+                "updated_at": "2024-05-31T18:42:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22632435,
+                "name": "Senior Delivery Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-07-30T17:11:14Z",
+                "default_hourly_rate": 195
+            },
+            {
+                "id": 22632434,
+                "name": "Associate Delivery Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-10-02T20:17:40Z",
+                "default_hourly_rate": 105
+            },
+            {
+                "id": 22632433,
+                "name": "Delivery Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-07-30T17:10:07Z",
+                "default_hourly_rate": 155
+            },
+            {
+                "id": 22626565,
+                "name": "Sales/CSM Workflow Research",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-22T20:50:24Z",
+                "updated_at": "2024-05-22T20:50:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22612041,
+                "name": "Senior Product Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-20T15:53:48Z",
+                "updated_at": "2024-07-30T17:11:27Z",
+                "default_hourly_rate": 285
+            },
+            {
+                "id": 22612040,
+                "name": "Product Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-20T15:53:48Z",
+                "updated_at": "2024-07-30T17:11:01Z",
+                "default_hourly_rate": 180
+            },
+            {
+                "id": 22588327,
+                "name": "TAMU - School of Nursing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-14T20:50:34Z",
+                "updated_at": "2024-05-14T20:50:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22565217,
+                "name": "TAMU - MarCom",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-09T20:02:32Z",
+                "updated_at": "2024-05-09T20:02:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22545494,
+                "name": "TAMU - School of Public Health",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-06T17:55:22Z",
+                "updated_at": "2024-05-06T17:55:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22524557,
+                "name": "TAMU - School of Medicine",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-01T19:13:41Z",
+                "updated_at": "2024-05-01T19:13:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22524379,
+                "name": "TAMU School of Medicine",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-01T18:45:49Z",
+                "updated_at": "2024-05-01T18:45:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22524378,
+                "name": "Qi-Code",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-01T18:45:49Z",
+                "updated_at": "2024-05-01T18:45:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22510459,
+                "name": "DIR",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-04-29T21:24:28Z",
+                "updated_at": "2024-04-29T21:24:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22425973,
+                "name": "TAMU - Office Of Provost - Academic Affairs",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-04-11T15:59:21Z",
+                "updated_at": "2024-04-11T15:59:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22422322,
+                "name": "RFP CNPweb",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-04-10T21:34:43Z",
+                "updated_at": "2024-04-10T21:34:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22393249,
+                "name": "MAS Law",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-04-04T18:43:26Z",
+                "updated_at": "2024-04-04T18:43:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22352449,
+                "name": "RFP - TAMU Web Hosting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-27T19:22:41Z",
+                "updated_at": "2024-03-27T19:22:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22352448,
+                "name": "RFP - UT Austin Data Management Services",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-27T19:22:41Z",
+                "updated_at": "2024-03-27T19:22:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22343358,
+                "name": "QA SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-26T14:40:33Z",
+                "updated_at": "2024-03-26T14:40:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22343357,
+                "name": "Engineering SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-26T14:40:33Z",
+                "updated_at": "2024-03-26T14:40:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22329995,
+                "name": "Internal Project Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-22T20:15:34Z",
+                "updated_at": "2024-03-22T20:15:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22322009,
+                "name": "engineering m",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-21T14:50:40Z",
+                "updated_at": "2024-03-21T14:50:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22321976,
+                "name": "Engineering Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-03-21T14:48:26Z",
+                "updated_at": "2024-07-30T17:10:49Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 22318508,
+                "name": "TAMU - Innovation",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-20T21:36:32Z",
+                "updated_at": "2024-03-20T21:36:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22316977,
+                "name": "Hubspot Cleanup",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-20T17:02:59Z",
+                "updated_at": "2024-03-20T17:02:59Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22294020,
+                "name": "TeamPassword Cleanup",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-15T20:04:35Z",
+                "updated_at": "2024-03-15T20:04:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22282723,
+                "name": "RFP - Florida Gulf Coast",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-13T20:11:55Z",
+                "updated_at": "2024-03-13T20:11:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22282722,
+                "name": "RFP - TAMU - Web Hosting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-13T20:11:55Z",
+                "updated_at": "2024-03-13T20:11:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22266326,
+                "name": "Lattice",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-11T14:36:18Z",
+                "updated_at": "2024-03-11T14:36:18Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22259023,
+                "name": "Blue Cord Arms",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-08T20:22:10Z",
+                "updated_at": "2024-03-08T20:22:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22247179,
+                "name": "Asset Tracking",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-06T20:58:22Z",
+                "updated_at": "2024-03-06T20:58:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22241151,
+                "name": "RFP UMass Amherst Website Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-05T21:54:48Z",
+                "updated_at": "2024-03-05T21:54:48Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22231336,
+                "name": "Resume Review - Engineer 3/4",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-04T17:54:30Z",
+                "updated_at": "2024-03-04T17:54:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22231335,
+                "name": "Resume Reviews",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-04T17:54:30Z",
+                "updated_at": "2024-03-04T17:54:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22229879,
+                "name": "RFP - OADC",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-04T15:25:39Z",
+                "updated_at": "2024-03-04T15:25:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22221050,
+                "name": "Web Development SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-01T22:06:05Z",
+                "updated_at": "2024-03-01T22:06:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22219453,
+                "name": "Grander",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-03-01T17:49:52Z",
+                "updated_at": "2024-03-01T17:49:52Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22206216,
+                "name": "Delivery Management SOP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-28T20:45:51Z",
+                "updated_at": "2024-02-28T20:45:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22206213,
+                "name": "TAMU - Office of Provost - Web Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-28T20:44:50Z",
+                "updated_at": "2024-02-28T20:44:50Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22206212,
+                "name": "TAMU - Office Of Provost - AI",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-28T20:44:50Z",
+                "updated_at": "2024-02-28T20:44:50Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22199679,
+                "name": "Creative Services Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-27T22:20:09Z",
+                "updated_at": "2024-02-27T22:20:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22199324,
+                "name": "RFP - ACS",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-27T21:13:10Z",
+                "updated_at": "2024-02-27T21:13:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22191283,
+                "name": "Sales Battlecard Updates",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-26T17:54:40Z",
+                "updated_at": "2024-02-26T17:54:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22140448,
+                "name": "Dynamicweb",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-15T19:57:26Z",
+                "updated_at": "2024-02-15T19:57:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22139837,
+                "name": "All Hands Template Update",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-15T18:17:10Z",
+                "updated_at": "2024-02-15T18:17:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22133418,
+                "name": "TAMU - Office of Provost",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-14T18:09:18Z",
+                "updated_at": "2024-02-14T18:09:18Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22128680,
+                "name": "Mize CPAs",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-13T22:24:57Z",
+                "updated_at": "2024-02-13T22:24:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22125898,
+                "name": "RFP - UCSD Food Service Business Intelligence Software",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-13T16:06:29Z",
+                "updated_at": "2024-02-13T16:06:29Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22125323,
+                "name": "Refined Home Services",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-13T15:01:57Z",
+                "updated_at": "2024-02-13T15:01:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22120452,
+                "name": "Lattice Onboarding",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-12T19:41:30Z",
+                "updated_at": "2024-02-12T19:41:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22120074,
+                "name": "TAMU - Grad",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-12T18:54:11Z",
+                "updated_at": "2024-02-12T18:54:11Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22104608,
+                "name": "Sulaiman",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-08T23:16:30Z",
+                "updated_at": "2024-02-08T23:16:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22070818,
+                "name": "RFP TAMU Forest Service - Planning Tool",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-02T22:22:00Z",
+                "updated_at": "2024-02-02T22:22:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22069754,
+                "name": "Operating Transition",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-02-02T20:02:02Z",
+                "updated_at": "2024-02-02T20:02:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22017427,
+                "name": "Sales - Traffic Flow Research",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-26T21:26:17Z",
+                "updated_at": "2024-01-26T21:26:17Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22010020,
+                "name": "RFP Basin Utah - Website Redesign",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-25T17:32:33Z",
+                "updated_at": "2024-01-25T17:32:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22010019,
+                "name": "RFP Provo Utah - Website Redesign",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-25T17:32:33Z",
+                "updated_at": "2024-01-25T17:32:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 22004819,
+                "name": "TAMU - TTDN",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-24T22:38:49Z",
+                "updated_at": "2024-01-24T22:38:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21977340,
+                "name": "Update Forecast Hours for DM's - bill to client",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-19T19:40:46Z",
+                "updated_at": "2024-01-19T19:40:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21975964,
+                "name": "Forecasting Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-19T16:13:27Z",
+                "updated_at": "2024-01-19T16:13:27Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21960417,
+                "name": "Darwin",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-17T17:12:25Z",
+                "updated_at": "2024-01-17T17:12:25Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21960032,
+                "name": "Sylwia",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-17T16:37:25Z",
+                "updated_at": "2024-01-17T16:37:25Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21959485,
+                "name": "Maximus",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-17T15:30:01Z",
+                "updated_at": "2024-01-17T15:30:01Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21955223,
+                "name": "Inventive Wiki Research",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-16T21:59:59Z",
+                "updated_at": "2024-01-16T21:59:59Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21952695,
+                "name": "RFP Grand Prairie - Mobile Library App",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-16T17:14:32Z",
+                "updated_at": "2024-01-16T17:14:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21952687,
+                "name": "Daily Sales Meeting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-16T17:13:22Z",
+                "updated_at": "2024-01-16T17:13:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21952686,
+                "name": "Inbound Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-16T17:13:22Z",
+                "updated_at": "2024-01-16T17:13:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21930715,
+                "name": "Sales - Capability Statement Update",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-12T22:03:21Z",
+                "updated_at": "2024-01-12T22:03:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21930202,
+                "name": "Product Principles",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-12T20:49:37Z",
+                "updated_at": "2024-01-12T20:49:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21930201,
+                "name": "CustomGPT",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-12T20:49:37Z",
+                "updated_at": "2024-01-12T20:49:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21928644,
+                "name": "Product and Design Process Improvement",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-12T17:06:39Z",
+                "updated_at": "2024-01-12T17:06:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21921774,
+                "name": "Roles and Rates Review",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-11T16:42:44Z",
+                "updated_at": "2024-01-11T16:42:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21915166,
+                "name": "GSuite Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-10T18:11:39Z",
+                "updated_at": "2024-01-10T18:11:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21913422,
+                "name": "RFP Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-10T15:18:40Z",
+                "updated_at": "2024-01-10T15:18:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900481,
+                "name": "Capsher",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:39:42Z",
+                "updated_at": "2024-01-08T20:39:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900476,
+                "name": "TAMU - Bush",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:38:39Z",
+                "updated_at": "2024-01-08T20:38:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900475,
+                "name": "RGL",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:38:39Z",
+                "updated_at": "2024-01-08T20:38:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900474,
+                "name": "Susu Lend",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:38:39Z",
+                "updated_at": "2024-01-08T20:38:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900437,
+                "name": "Counter Find",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:36:43Z",
+                "updated_at": "2024-01-08T20:36:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900436,
+                "name": "Tarisio",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:36:42Z",
+                "updated_at": "2024-01-08T20:36:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900435,
+                "name": "TAMU - OIT",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T20:36:42Z",
+                "updated_at": "2024-01-08T20:36:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21900009,
+                "name": "Harvest - Internal Billing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:57:22Z",
+                "updated_at": "2024-01-08T19:57:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899711,
+                "name": "Non-billable 1x1",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:34:22Z",
+                "updated_at": "2024-01-08T19:34:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899710,
+                "name": "CounterFind",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:34:22Z",
+                "updated_at": "2024-01-08T19:34:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899502,
+                "name": "Internal Emails",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:11:02Z",
+                "updated_at": "2024-01-08T19:11:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899446,
+                "name": "Culture Committee",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:02:43Z",
+                "updated_at": "2024-01-08T19:02:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899445,
+                "name": "Signing cards",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:02:43Z",
+                "updated_at": "2024-01-08T19:02:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899444,
+                "name": "Officevibe",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T19:02:42Z",
+                "updated_at": "2024-01-08T19:02:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899375,
+                "name": "Inbox Zero - bill to client",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:55:24Z",
+                "updated_at": "2024-01-08T18:55:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899238,
+                "name": "Poolology",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:41:06Z",
+                "updated_at": "2024-01-08T18:41:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899237,
+                "name": "TAMU - Launch",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:42Z",
+                "updated_at": "2024-01-08T18:40:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899236,
+                "name": "TAMU - UHS",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:42Z",
+                "updated_at": "2024-01-08T18:40:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899235,
+                "name": "TAMU - Dentistry & Galveston",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:42Z",
+                "updated_at": "2024-01-08T18:40:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899234,
+                "name": "TAMU - Dentistry",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:42Z",
+                "updated_at": "2024-01-08T18:40:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899233,
+                "name": "TAMU - Law",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:42Z",
+                "updated_at": "2024-01-08T18:40:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899232,
+                "name": "TAMU - HSC",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:41Z",
+                "updated_at": "2024-01-08T18:40:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899231,
+                "name": "TAMU - Arts & Science",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:41Z",
+                "updated_at": "2024-01-08T18:40:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899230,
+                "name": "AIB",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:40:41Z",
+                "updated_at": "2024-01-08T18:40:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899134,
+                "name": "Internal Meetings - bill to client",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:29:00Z",
+                "updated_at": "2024-01-08T18:29:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899093,
+                "name": "Patches",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:22:33Z",
+                "updated_at": "2024-01-08T18:22:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899092,
+                "name": "Career Ladders",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:22:33Z",
+                "updated_at": "2024-01-08T18:22:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21899091,
+                "name": "OKR",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-08T18:22:33Z",
+                "updated_at": "2024-01-08T18:22:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886197,
+                "name": "Invoice Follow-up",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:54:09Z",
+                "updated_at": "2024-01-05T18:54:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886196,
+                "name": "Factoring",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:54:09Z",
+                "updated_at": "2024-01-05T18:54:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886131,
+                "name": "Project Status",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:43:08Z",
+                "updated_at": "2024-01-05T18:43:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886130,
+                "name": "Project Queue",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:43:08Z",
+                "updated_at": "2024-01-05T18:43:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886129,
+                "name": "Product and Design Sync",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:43:08Z",
+                "updated_at": "2024-01-05T18:43:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886059,
+                "name": "Tech Thursday",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:35:26Z",
+                "updated_at": "2024-01-05T18:35:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21886058,
+                "name": "Engineering Discussions",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-01-05T18:35:26Z",
+                "updated_at": "2024-01-05T18:35:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21830258,
+                "name": "Meetings - Will be billable later",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-12-21T17:22:07Z",
+                "updated_at": "2023-12-21T17:22:07Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21830212,
+                "name": "Case Study - Bright Nutrition",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-12-21T17:11:40Z",
+                "updated_at": "2023-12-21T17:11:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21646903,
+                "name": "Reporting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-11-13T22:46:09Z",
+                "updated_at": "2023-11-13T22:46:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21646878,
+                "name": "Review",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-11-13T22:42:43Z",
+                "updated_at": "2023-11-13T22:42:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21646877,
+                "name": "Proposals",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-11-13T22:42:43Z",
+                "updated_at": "2023-11-13T22:42:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21646876,
+                "name": "Inbound platforms",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-11-13T22:42:43Z",
+                "updated_at": "2023-11-13T22:42:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21492469,
+                "name": "Bright Nutrition",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-10-16T19:32:51Z",
+                "updated_at": "2023-10-16T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 21392405,
+                "name": "Solution Architect 2",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-09-27T18:25:53Z",
+                "updated_at": "2023-09-27T18:25:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20997065,
+                "name": "Prograde",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-07-12T20:08:58Z",
+                "updated_at": "2023-07-12T20:08:58Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20965013,
+                "name": "User Interface Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-07-06T13:59:48Z",
+                "updated_at": "2024-08-13T18:43:50Z",
+                "default_hourly_rate": 170
+            },
+            {
+                "id": 20960661,
+                "name": "GD4",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-07-05T19:57:29Z",
+                "updated_at": "2023-07-05T19:57:29Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20946461,
+                "name": "S&S Towing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-07-03T14:35:50Z",
+                "updated_at": "2023-07-03T14:35:50Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20654105,
+                "name": "Copywriter",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-05-10T22:28:27Z",
+                "updated_at": "2023-05-10T22:28:27Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20446797,
+                "name": "SDI",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-04-03T16:39:12Z",
+                "updated_at": "2023-04-03T16:39:12Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20335671,
+                "name": "Associate PO",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-03-15T19:03:19Z",
+                "updated_at": "2023-03-15T19:03:19Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20283322,
+                "name": "Jeremy Hintz",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-03-06T21:00:58Z",
+                "updated_at": "2023-03-06T21:00:58Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 20150336,
+                "name": "UTA",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-02-10T20:24:21Z",
+                "updated_at": "2023-02-10T20:24:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19915146,
+                "name": "Director of Recruiting",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-01-04T15:03:09Z",
+                "updated_at": "2023-01-04T15:03:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19824986,
+                "name": "Design Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-12-12T22:05:43Z",
+                "updated_at": "2022-12-12T22:05:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19824985,
+                "name": "Experience Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-12-12T22:05:43Z",
+                "updated_at": "2022-12-12T22:05:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19748939,
+                "name": "Taskorg",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-11-26T17:38:50Z",
+                "updated_at": "2022-11-26T17:38:50Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19729849,
+                "name": "Bench Time",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-11-21T20:45:08Z",
+                "updated_at": "2022-11-21T20:45:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19708265,
+                "name": "MAS HVAC",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-11-16T18:19:47Z",
+                "updated_at": "2022-11-16T18:19:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19707269,
+                "name": "Scan Systems",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-11-16T15:47:20Z",
+                "updated_at": "2022-11-16T15:47:20Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19674336,
+                "name": "Kaydem/Fund&Grow",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-11-09T16:31:13Z",
+                "updated_at": "2022-11-09T16:31:13Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19603169,
+                "name": "Director of PMO",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-10-26T17:07:30Z",
+                "updated_at": "2022-10-26T17:07:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19534651,
+                "name": "SandwYch",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-10-12T20:16:49Z",
+                "updated_at": "2022-10-12T20:16:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19521581,
+                "name": "Director of Product",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:39Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 19521580,
+                "name": "Director of Design",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:29Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 19521579,
+                "name": "Director of Engineering",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:33Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 19257118,
+                "name": "Improvements",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-08-18T16:37:05Z",
+                "updated_at": "2022-08-18T16:37:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19223522,
+                "name": "chefa",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-08-11T14:53:00Z",
+                "updated_at": "2022-08-11T14:53:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19210246,
+                "name": "Outwing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-08-09T13:30:34Z",
+                "updated_at": "2022-08-09T13:30:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19154168,
+                "name": "Uncategorized Time",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-07-28T18:56:40Z",
+                "updated_at": "2022-07-28T18:56:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19154119,
+                "name": "Design System",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-07-28T18:48:08Z",
+                "updated_at": "2022-07-28T18:48:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19154118,
+                "name": "Website Audit",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-07-28T18:48:08Z",
+                "updated_at": "2022-07-28T18:48:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19131065,
+                "name": "ClassroomSafe",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-07-24T18:47:06Z",
+                "updated_at": "2022-07-24T18:47:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 19080635,
+                "name": "Wellness",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-07-12T22:10:16Z",
+                "updated_at": "2022-07-12T22:10:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18759691,
+                "name": "ACHV",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-05-12T20:04:53Z",
+                "updated_at": "2022-05-12T20:04:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18759690,
+                "name": "Facility Live",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-05-12T20:04:51Z",
+                "updated_at": "2022-05-12T20:04:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18758445,
+                "name": "RFP Opera Hosue",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-05-12T16:20:47Z",
+                "updated_at": "2022-05-12T16:20:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18758444,
+                "name": "RFP Opera House",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-05-12T16:20:46Z",
+                "updated_at": "2022-05-12T16:20:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18701013,
+                "name": "RFP Walla Walla",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-05-02T21:09:22Z",
+                "updated_at": "2022-05-02T21:09:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18607361,
+                "name": "senior ui",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-04-13T17:54:43Z",
+                "updated_at": "2022-04-13T17:54:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18605664,
+                "name": "Technical Writer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-04-13T13:49:30Z",
+                "updated_at": "2022-04-13T13:49:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18521380,
+                "name": "James Group",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-03-31T15:53:24Z",
+                "updated_at": "2022-03-31T15:53:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18361785,
+                "name": "I4",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-03-02T16:23:51Z",
+                "updated_at": "2022-03-02T16:23:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18273958,
+                "name": "Country Records RFP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-02-15T16:42:17Z",
+                "updated_at": "2022-02-15T16:42:17Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 18118092,
+                "name": "BuyDRM",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-01-20T19:59:10Z",
+                "updated_at": "2022-01-20T20:13:06Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 17897295,
+                "name": "SchoolSAFE",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-12-13T21:40:23Z",
+                "updated_at": "2021-12-13T21:40:23Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17632019,
+                "name": "Product Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-11-01T21:16:40Z",
+                "updated_at": "2021-11-01T21:16:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17544590,
+                "name": "Okapy",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-10-19T14:24:51Z",
+                "updated_at": "2021-10-19T14:24:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17460239,
+                "name": "Litigation Exchange",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-10-06T01:48:05Z",
+                "updated_at": "2021-10-06T01:48:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17366533,
+                "name": "Principal Product Owner",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-09-21T20:22:54Z",
+                "updated_at": "2021-09-21T20:22:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17242516,
+                "name": "Marketing Lead",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-09-01T14:29:53Z",
+                "updated_at": "2021-09-01T14:29:53Z",
+                "default_hourly_rate": 235
+            },
+            {
+                "id": 17242512,
+                "name": "Product Owner",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-09-01T14:29:37Z",
+                "updated_at": "2022-08-22T19:45:00Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 17227687,
+                "name": "Source",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-08-30T19:29:56Z",
+                "updated_at": "2021-08-30T19:29:56Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17192411,
+                "name": "Unbillable - Solution Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-08-24T18:20:51Z",
+                "updated_at": "2021-08-24T18:20:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 17172371,
+                "name": "Texas Tech RFP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-08-20T19:34:06Z",
+                "updated_at": "2021-08-20T19:34:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16985715,
+                "name": "Colley Intelligence",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-07-20T15:07:43Z",
+                "updated_at": "2021-07-20T15:07:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16924682,
+                "name": "Support",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-07-08T16:28:20Z",
+                "updated_at": "2021-07-08T16:28:20Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16840002,
+                "name": "eCatholic",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-06-23T17:06:03Z",
+                "updated_at": "2021-06-23T17:06:03Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16752886,
+                "name": "American Institute of Balance",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-06-07T16:38:18Z",
+                "updated_at": "2021-06-07T16:38:18Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16719355,
+                "name": "Teamsight",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-06-01T15:52:16Z",
+                "updated_at": "2021-06-01T15:52:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16719354,
+                "name": "Allergen Analytics",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-06-01T15:52:16Z",
+                "updated_at": "2021-06-01T15:52:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16682895,
+                "name": "CLIPR",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-05-25T14:02:34Z",
+                "updated_at": "2021-05-25T14:02:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16640509,
+                "name": "SDR",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-05-17T18:39:13Z",
+                "updated_at": "2021-05-17T18:39:13Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16569322,
+                "name": "AHCV",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-05-04T15:05:10Z",
+                "updated_at": "2021-05-04T15:05:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16543355,
+                "name": "Vault Atlas",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-29T16:21:22Z",
+                "updated_at": "2021-04-29T16:21:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16538128,
+                "name": "Freedom Commodities",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-28T20:36:40Z",
+                "updated_at": "2021-04-28T20:36:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16528717,
+                "name": "Vanguard",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-27T15:03:40Z",
+                "updated_at": "2021-04-27T15:03:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16521545,
+                "name": "Met/Gal",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-26T15:24:44Z",
+                "updated_at": "2021-04-26T15:24:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16435313,
+                "name": "Etrax",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-09T17:32:15Z",
+                "updated_at": "2021-04-09T17:32:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16421843,
+                "name": "Brohn Homes",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-04-07T16:54:55Z",
+                "updated_at": "2021-04-07T16:54:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16369887,
+                "name": "Mechanics Hub",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-03-29T18:57:15Z",
+                "updated_at": "2021-03-29T18:57:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16316482,
+                "name": "Zatos Investments",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-03-19T14:42:46Z",
+                "updated_at": "2021-03-19T14:42:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16301568,
+                "name": "Sonar Connections",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-03-17T13:31:57Z",
+                "updated_at": "2021-03-17T13:31:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16245291,
+                "name": "Portfolio",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-03-08T20:39:32Z",
+                "updated_at": "2021-03-08T20:39:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071186,
+                "name": "CareerEco Corp",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071185,
+                "name": "Ameredev",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071184,
+                "name": "Squod",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071183,
+                "name": "Brilliance",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071182,
+                "name": "Kirby",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 16071181,
+                "name": "ASCA",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-02-08T19:32:51Z",
+                "updated_at": "2021-02-08T19:32:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15966846,
+                "name": "Birth to Work",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-01-25T15:24:28Z",
+                "updated_at": "2021-01-25T15:24:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15966834,
+                "name": "idrShare",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-01-25T15:23:51Z",
+                "updated_at": "2021-01-25T15:23:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15911029,
+                "name": "raising families",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-01-15T18:30:28Z",
+                "updated_at": "2021-01-15T18:30:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15864336,
+                "name": "CFA",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-01-08T21:00:47Z",
+                "updated_at": "2021-01-08T21:00:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15836689,
+                "name": "Add Trades",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-01-05T14:26:14Z",
+                "updated_at": "2021-01-05T14:26:14Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15712857,
+                "name": "Presenting Proposal",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T23:14:31Z",
+                "updated_at": "2020-12-07T23:14:31Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15712856,
+                "name": "Building PERT",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T23:14:31Z",
+                "updated_at": "2020-12-07T23:14:31Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15712855,
+                "name": "Building Backlog",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T23:14:31Z",
+                "updated_at": "2020-12-07T23:14:31Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15712854,
+                "name": "Discovery Meetings",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T23:14:31Z",
+                "updated_at": "2020-12-07T23:14:31Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15712025,
+                "name": "Apprentice Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T20:46:03Z",
+                "updated_at": "2020-12-07T20:46:03Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15711989,
+                "name": "Unbillable Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-12-07T20:38:44Z",
+                "updated_at": "2020-12-07T20:38:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 15514752,
+                "name": "poolsmart",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-10-30T13:46:05Z",
+                "updated_at": "2020-10-30T13:46:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14899374,
+                "name": "Senior SEO Analyst",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-07-21T14:25:39Z",
+                "updated_at": "2020-07-21T14:25:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14892163,
+                "name": "Apostoli Viae",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-07-20T15:21:34Z",
+                "updated_at": "2020-07-20T15:21:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14882124,
+                "name": "One Cloud",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-07-17T18:53:07Z",
+                "updated_at": "2020-07-17T18:53:07Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14782110,
+                "name": "QA",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-07-01T19:41:46Z",
+                "updated_at": "2020-07-01T19:41:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14774605,
+                "name": "Senior Project Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T22:48:25Z",
+                "updated_at": "2020-06-30T22:48:25Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14774604,
+                "name": "Senior User Experience Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T22:48:25Z",
+                "updated_at": "2024-08-13T18:46:21Z",
+                "default_hourly_rate": 210
+            },
+            {
+                "id": 14771019,
+                "name": "Stream",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T14:03:43Z",
+                "updated_at": "2020-06-30T14:03:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14770973,
+                "name": "IAS",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T13:58:54Z",
+                "updated_at": "2020-06-30T13:58:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14770972,
+                "name": "Sarma",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T13:58:54Z",
+                "updated_at": "2020-06-30T13:58:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14691768,
+                "name": "Meetings",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-16T16:18:03Z",
+                "updated_at": "2020-06-16T16:18:03Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14686880,
+                "name": "Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-15T22:27:36Z",
+                "updated_at": "2020-06-15T22:27:36Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14543729,
+                "name": "Jira/Confluence Integration",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-22T19:50:21Z",
+                "updated_at": "2020-05-22T19:50:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14542449,
+                "name": "Senior Web Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-22T16:02:34Z",
+                "updated_at": "2020-05-22T16:02:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14505986,
+                "name": "Studios - Programmiong",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-16T14:42:38Z",
+                "updated_at": "2020-05-16T14:42:38Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14505985,
+                "name": "Studios - Programming",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-16T14:42:38Z",
+                "updated_at": "2020-05-16T14:42:38Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14505984,
+                "name": "Studios - Project Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-16T14:42:38Z",
+                "updated_at": "2020-05-16T14:42:38Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14505983,
+                "name": "Studios - Graphic Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-16T14:42:38Z",
+                "updated_at": "2020-05-16T14:42:38Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14505968,
+                "name": "Meeting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-16T14:35:55Z",
+                "updated_at": "2020-05-16T14:35:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14503438,
+                "name": "PRESALES - Graphic Design",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-15T19:18:46Z",
+                "updated_at": "2020-05-15T19:18:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14456579,
+                "name": "UI Design",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-08T21:53:13Z",
+                "updated_at": "2020-05-08T21:53:13Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14421981,
+                "name": "TAMU - Internship",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-05-04T18:24:32Z",
+                "updated_at": "2020-05-04T18:24:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14279091,
+                "name": "New Hire: Get Onboard!",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-04-13T15:04:42Z",
+                "updated_at": "2020-04-13T15:04:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14262984,
+                "name": "UT Dallas",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-04-09T14:45:44Z",
+                "updated_at": "2020-04-09T14:45:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14210133,
+                "name": "TAP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-04-01T19:08:07Z",
+                "updated_at": "2020-04-01T19:08:07Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14040698,
+                "name": "Junior Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-09T17:12:10Z",
+                "updated_at": "2020-03-09T17:12:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14040697,
+                "name": "Senior Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-09T17:12:10Z",
+                "updated_at": "2024-08-13T18:46:57Z",
+                "default_hourly_rate": 195
+            },
+            {
+                "id": 14040696,
+                "name": "Senior Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-09T17:12:10Z",
+                "updated_at": "2020-03-09T17:12:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14039619,
+                "name": "TAMU",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-09T15:26:08Z",
+                "updated_at": "2020-03-09T15:26:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14008848,
+                "name": "Chief Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-04T18:22:12Z",
+                "updated_at": "2020-03-04T18:22:12Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 14008792,
+                "name": "Senior User Interface Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-04T18:12:51Z",
+                "updated_at": "2024-08-13T18:46:05Z",
+                "default_hourly_rate": 210
+            },
+            {
+                "id": 13999682,
+                "name": "RFFC",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-03T16:06:53Z",
+                "updated_at": "2020-03-03T16:06:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13999681,
+                "name": "MGR360",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-03T16:06:53Z",
+                "updated_at": "2020-03-03T16:06:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13975597,
+                "name": "Paid Time Off (PTO)",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-02-28T20:49:39Z",
+                "updated_at": "2020-02-28T20:49:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13957460,
+                "name": "Tim Tuggey Law",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-02-26T15:10:11Z",
+                "updated_at": "2020-02-26T15:10:11Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13902154,
+                "name": "Workbright",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-02-18T19:02:21Z",
+                "updated_at": "2020-02-18T19:02:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13698887,
+                "name": "Data Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-01-20T22:55:03Z",
+                "updated_at": "2020-01-20T22:55:03Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13499389,
+                "name": "Alaska RFP",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-12-19T19:10:01Z",
+                "updated_at": "2019-12-19T19:10:01Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13421051,
+                "name": "UX Design",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-12-05T19:57:11Z",
+                "updated_at": "2019-12-05T19:57:11Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13396982,
+                "name": "Senior Database Administrator",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-12-02T21:41:32Z",
+                "updated_at": "2019-12-02T21:41:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13396908,
+                "name": "Senior Product Owner",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-12-02T21:32:53Z",
+                "updated_at": "2019-12-02T21:32:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13324834,
+                "name": "Senior Software Engineer (Infrastructure)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-11-19T20:20:48Z",
+                "updated_at": "2019-11-19T20:20:48Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13284649,
+                "name": "Quantum Interface",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-11-12T22:25:57Z",
+                "updated_at": "2019-11-12T22:25:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13133180,
+                "name": "Assurant",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-10-16T18:19:47Z",
+                "updated_at": "2019-10-16T18:19:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13066781,
+                "name": "Senior Trainer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-10-04T15:52:46Z",
+                "updated_at": "2019-10-04T15:52:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13059979,
+                "name": "Outlier Energy",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-10-03T15:51:06Z",
+                "updated_at": "2019-10-03T15:51:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13037672,
+                "name": "connection inc",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-10-01T14:44:21Z",
+                "updated_at": "2019-10-01T14:44:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 13006120,
+                "name": "Senior Quality Engineer",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2019-09-25T21:17:34Z",
+                "updated_at": "2024-07-30T17:11:37Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 12978742,
+                "name": "Inventive Studios Website",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-09-20T15:09:52Z",
+                "updated_at": "2019-09-20T15:09:52Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12960820,
+                "name": "Datawings",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-09-17T21:15:30Z",
+                "updated_at": "2019-09-17T21:15:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12891885,
+                "name": "Spitzer",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-09-05T15:44:42Z",
+                "updated_at": "2019-09-05T15:44:42Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12843521,
+                "name": "Breeze",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-08-28T16:12:45Z",
+                "updated_at": "2019-08-28T16:12:45Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12843520,
+                "name": "Sentier",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-08-28T16:12:45Z",
+                "updated_at": "2019-08-28T16:12:45Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12776082,
+                "name": "Technical Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-08-16T14:50:16Z",
+                "updated_at": "2019-08-16T14:50:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12776081,
+                "name": "Principal Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-08-16T14:50:16Z",
+                "updated_at": "2019-08-16T14:50:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12734729,
+                "name": "Engineering Demos",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-08-08T19:11:00Z",
+                "updated_at": "2019-08-08T19:11:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12675830,
+                "name": "Supernaut",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-30T19:58:40Z",
+                "updated_at": "2019-07-30T19:58:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12598406,
+                "name": "FollowupEdge",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-16T22:19:31Z",
+                "updated_at": "2019-07-16T22:19:31Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12570976,
+                "name": "Board Of Directors",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-11T14:10:48Z",
+                "updated_at": "2019-07-11T14:10:48Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12565833,
+                "name": "TICO",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-10T17:56:16Z",
+                "updated_at": "2019-07-10T17:56:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12565832,
+                "name": "NAVSO",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-10T17:56:16Z",
+                "updated_at": "2019-07-10T17:56:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12543441,
+                "name": "Commission",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-07T13:08:27Z",
+                "updated_at": "2019-07-07T13:08:27Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12534286,
+                "name": "Partnerships",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-04T15:31:22Z",
+                "updated_at": "2019-07-04T15:31:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12511363,
+                "name": "RFP TCOLE",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-07-01T19:19:04Z",
+                "updated_at": "2019-07-01T19:19:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12502508,
+                "name": "InfotainmentRadio",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-30T17:13:08Z",
+                "updated_at": "2019-06-30T17:13:08Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12483154,
+                "name": "TWC",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-26T18:24:35Z",
+                "updated_at": "2019-06-26T18:24:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12481553,
+                "name": "11trees",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-26T15:19:36Z",
+                "updated_at": "2019-06-26T15:19:36Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12457469,
+                "name": "Robo6k",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-21T19:03:02Z",
+                "updated_at": "2019-06-21T19:03:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12445696,
+                "name": "Internal billing",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-19T21:31:48Z",
+                "updated_at": "2019-06-19T21:31:48Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12404008,
+                "name": "Partners/Strategy",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-12T15:12:40Z",
+                "updated_at": "2019-06-12T15:12:40Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12380431,
+                "name": "Capstone",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-07T20:45:15Z",
+                "updated_at": "2019-06-07T20:45:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12379820,
+                "name": "Interviews",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-07T18:57:20Z",
+                "updated_at": "2019-06-07T18:57:20Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12379332,
+                "name": "Events",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-07T17:41:15Z",
+                "updated_at": "2019-06-07T17:41:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12368389,
+                "name": "LinkedIn/Dux-soup",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-06-06T00:59:35Z",
+                "updated_at": "2019-06-06T00:59:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12338142,
+                "name": "American Campus Communities",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-31T20:27:44Z",
+                "updated_at": "2019-05-31T20:27:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12338127,
+                "name": "myHouseby",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-31T20:24:37Z",
+                "updated_at": "2019-05-31T20:24:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12337595,
+                "name": "Aptage",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-31T19:04:02Z",
+                "updated_at": "2019-05-31T19:04:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12309039,
+                "name": "LATAM",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-27T17:03:33Z",
+                "updated_at": "2019-05-27T17:03:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12308421,
+                "name": "Analytics & SEO",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-27T14:19:24Z",
+                "updated_at": "2019-05-27T14:19:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12282360,
+                "name": "USAA",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-22T01:28:10Z",
+                "updated_at": "2019-05-22T01:28:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12278958,
+                "name": "AGC",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-21T15:32:57Z",
+                "updated_at": "2019-05-21T15:32:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12270758,
+                "name": "Payroll",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-20T14:15:06Z",
+                "updated_at": "2019-05-20T14:15:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12264342,
+                "name": "Supplies",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-18T17:42:06Z",
+                "updated_at": "2019-05-18T17:42:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12263262,
+                "name": "Tools",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-18T04:25:53Z",
+                "updated_at": "2019-05-18T04:25:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12256517,
+                "name": "Fun events",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T21:55:33Z",
+                "updated_at": "2019-05-16T21:55:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12255657,
+                "name": "Exebridge",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T19:25:17Z",
+                "updated_at": "2019-05-16T19:25:17Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12254871,
+                "name": "JetRock",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T17:41:16Z",
+                "updated_at": "2019-05-16T17:41:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12254075,
+                "name": "Rosary App",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T15:26:52Z",
+                "updated_at": "2019-05-16T15:26:52Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253601,
+                "name": "Florence Analytics",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T14:26:19Z",
+                "updated_at": "2019-05-16T14:26:19Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253267,
+                "name": "RFP Main 19 - 0023 - TexasAM - Web Dev",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:34:21Z",
+                "updated_at": "2019-05-16T13:34:21Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253259,
+                "name": "Cleaning",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:33:23Z",
+                "updated_at": "2019-05-16T13:33:23Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253185,
+                "name": "Kitchen",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:25:29Z",
+                "updated_at": "2019-05-16T13:25:29Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253053,
+                "name": "DayTrader",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:47Z",
+                "updated_at": "2019-05-16T13:10:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253052,
+                "name": "CCT",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:47Z",
+                "updated_at": "2019-05-16T13:10:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253051,
+                "name": "NAMI Texas",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253050,
+                "name": "Ceresa",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253049,
+                "name": "Point6",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253048,
+                "name": "Service Group",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253047,
+                "name": "Bazaar Voice",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253046,
+                "name": "YouMeMine",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253045,
+                "name": "Vaquero",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253044,
+                "name": "Quintela",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253043,
+                "name": "Tactical Fitness",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253042,
+                "name": "Pijn",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253041,
+                "name": "Veterans Insurance",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253040,
+                "name": "Instajury",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12253039,
+                "name": "DRHorton",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T13:10:46Z",
+                "updated_at": "2019-05-16T13:10:46Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250613,
+                "name": "Social Networking",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T03:27:15Z",
+                "updated_at": "2019-05-16T03:27:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250612,
+                "name": "Networking",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T03:27:15Z",
+                "updated_at": "2019-05-16T03:27:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250563,
+                "name": "intellxxdna",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T03:02:16Z",
+                "updated_at": "2019-05-16T03:02:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250558,
+                "name": "AAA",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:51:00Z",
+                "updated_at": "2019-05-16T02:51:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250557,
+                "name": "outscout",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:51:00Z",
+                "updated_at": "2019-05-16T02:51:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250556,
+                "name": "KnowRX",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:51:00Z",
+                "updated_at": "2019-05-16T02:51:00Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250544,
+                "name": "Client Success",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:45:34Z",
+                "updated_at": "2019-05-16T02:45:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250543,
+                "name": "Engineering Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:44:53Z",
+                "updated_at": "2019-05-16T02:44:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250518,
+                "name": "Administration",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:37:44Z",
+                "updated_at": "2019-05-16T02:37:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250474,
+                "name": "Translation",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T02:09:44Z",
+                "updated_at": "2019-05-16T02:09:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250451,
+                "name": "Room Preparation",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:54:55Z",
+                "updated_at": "2019-05-16T01:54:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250450,
+                "name": "Studio Tours",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:54:54Z",
+                "updated_at": "2019-05-16T01:54:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250449,
+                "name": "Meetups",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:54:54Z",
+                "updated_at": "2019-05-16T01:54:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250424,
+                "name": "Dedicated Rooms",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:50:47Z",
+                "updated_at": "2019-05-16T01:50:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250423,
+                "name": "Hot desks",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:50:47Z",
+                "updated_at": "2019-05-16T01:50:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12250422,
+                "name": "Dedicated Desks",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-16T01:50:47Z",
+                "updated_at": "2019-05-16T01:50:47Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249860,
+                "name": "1x1 Meetings",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:59:02Z",
+                "updated_at": "2019-05-15T22:59:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249859,
+                "name": "Offsites",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:57:33Z",
+                "updated_at": "2019-05-15T22:57:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249858,
+                "name": "All-hands Meetings",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:57:33Z",
+                "updated_at": "2019-05-15T22:57:33Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249837,
+                "name": "Sponsorship Sales",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:44:44Z",
+                "updated_at": "2019-05-15T22:44:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249836,
+                "name": "Direct Student Sales",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:44:44Z",
+                "updated_at": "2019-05-15T22:44:44Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249805,
+                "name": "Recruiting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:34:43Z",
+                "updated_at": "2019-05-15T22:34:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249804,
+                "name": "Culture",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:34:43Z",
+                "updated_at": "2019-05-15T22:34:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249803,
+                "name": "Intern Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:34:43Z",
+                "updated_at": "2019-05-15T22:34:43Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249790,
+                "name": "Contracts",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:32:24Z",
+                "updated_at": "2019-05-15T22:32:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249789,
+                "name": "Tracking",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:32:24Z",
+                "updated_at": "2019-05-15T22:32:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249788,
+                "name": "Onboarding",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:32:24Z",
+                "updated_at": "2019-05-15T22:32:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249782,
+                "name": "Research",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:30:16Z",
+                "updated_at": "2019-05-15T22:30:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249781,
+                "name": "Training",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:30:16Z",
+                "updated_at": "2019-05-15T22:30:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249780,
+                "name": "Documentation",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:30:16Z",
+                "updated_at": "2019-05-15T22:30:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249779,
+                "name": "Book club",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:30:16Z",
+                "updated_at": "2019-05-15T22:30:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249757,
+                "name": "Management Meetings",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:25:35Z",
+                "updated_at": "2019-05-15T22:25:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249715,
+                "name": "Student 1x1",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:20:04Z",
+                "updated_at": "2019-05-15T22:20:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249714,
+                "name": "Curriculum Development",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:20:04Z",
+                "updated_at": "2019-05-15T22:20:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249713,
+                "name": "Curriculum Author Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:20:04Z",
+                "updated_at": "2019-05-15T22:20:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249712,
+                "name": "TAing",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:20:04Z",
+                "updated_at": "2019-05-15T22:20:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249711,
+                "name": "Teaching",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:20:04Z",
+                "updated_at": "2019-05-15T22:20:04Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249708,
+                "name": "Tax",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249707,
+                "name": "Insurance",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249706,
+                "name": "Legal",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249705,
+                "name": "Vendors",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249704,
+                "name": "Bookkeeping",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249703,
+                "name": "Forecasting",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249702,
+                "name": "Banking",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249701,
+                "name": "A/P",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249700,
+                "name": "A/R",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:19:53Z",
+                "updated_at": "2019-05-15T22:19:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249667,
+                "name": "Social Chains",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:15:53Z",
+                "updated_at": "2019-05-15T22:15:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12249666,
+                "name": "Veterati",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-15T22:15:53Z",
+                "updated_at": "2019-05-15T22:15:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 12200573,
+                "name": "Sidekick Digital Solutions",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-05-07T21:06:51Z",
+                "updated_at": "2019-05-07T21:06:51Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11726023,
+                "name": "Living Security",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-03-14T22:00:32Z",
+                "updated_at": "2019-03-14T22:00:32Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11651561,
+                "name": "Software Development",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-03-04T15:45:22Z",
+                "updated_at": "2019-03-04T15:45:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11619896,
+                "name": "Babylon Health",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-02-27T16:29:28Z",
+                "updated_at": "2019-02-27T16:29:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11488035,
+                "name": "Texie",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-02-07T13:31:39Z",
+                "updated_at": "2019-02-07T13:31:39Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11474137,
+                "name": "CATCH",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-02-05T21:19:11Z",
+                "updated_at": "2019-02-05T21:19:11Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11429085,
+                "name": "L2BnB",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-30T16:10:02Z",
+                "updated_at": "2019-01-30T16:10:02Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11400943,
+                "name": "barter.io",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-25T22:06:23Z",
+                "updated_at": "2019-01-25T22:06:23Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11396670,
+                "name": "Graphic Design (Non-Billable)",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-25T13:15:58Z",
+                "updated_at": "2019-01-25T13:15:58Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11381106,
+                "name": "Education Shared Space",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-23T18:28:05Z",
+                "updated_at": "2019-01-23T18:28:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11381105,
+                "name": "Land Marketplace",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-23T18:28:05Z",
+                "updated_at": "2019-01-23T18:28:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11381104,
+                "name": "BEST",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-23T18:28:05Z",
+                "updated_at": "2019-01-23T18:28:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11381103,
+                "name": "RFP 190103 Web and Cloud Computing Services",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2019-01-23T18:28:05Z",
+                "updated_at": "2019-01-23T18:28:05Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 11173373,
+                "name": "Senior Engineer (Non-Billable)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-12-19T12:18:55Z",
+                "updated_at": "2018-12-19T12:18:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10860628,
+                "name": "Senior Software Engineer (Offshore)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-11-01T15:21:57Z",
+                "updated_at": "2018-11-01T15:21:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10700250,
+                "name": "Senior Software Engineer (Onboarding)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-10-10T15:12:10Z",
+                "updated_at": "2018-10-10T15:12:10Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10657376,
+                "name": "Engineering",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-10-03T12:51:57Z",
+                "updated_at": "2018-10-03T12:51:57Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10599240,
+                "name": "Associate Software Engineer (Onboarding)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-09-24T16:19:37Z",
+                "updated_at": "2018-09-24T16:19:37Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10599211,
+                "name": "Software Engineer (Onboarding)",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-09-24T16:17:24Z",
+                "updated_at": "2018-09-24T16:17:24Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10277593,
+                "name": "Production Support - On Call",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-07-30T19:34:26Z",
+                "updated_at": "2018-07-30T19:34:26Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 10240098,
+                "name": "Discovery",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-07-23T19:28:16Z",
+                "updated_at": "2018-07-23T19:28:16Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9904303,
+                "name": "Business Analyst",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-06-04T21:08:34Z",
+                "updated_at": "2018-06-04T21:08:34Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9744277,
+                "name": "VCP - Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:58:50Z",
+                "updated_at": "2020-08-13T17:54:59Z",
+                "default_hourly_rate": 110
+            },
+            {
+                "id": 9744267,
+                "name": "VCP - Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:57:58Z",
+                "updated_at": "2020-08-13T17:53:51Z",
+                "default_hourly_rate": 130
+            },
+            {
+                "id": 9744244,
+                "name": "VCP - Solution Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:56:15Z",
+                "updated_at": "2020-08-13T17:54:47Z",
+                "default_hourly_rate": 215
+            },
+            {
+                "id": 9744232,
+                "name": "VCP - Principal Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:55:52Z",
+                "updated_at": "2020-08-13T17:53:58Z",
+                "default_hourly_rate": 205
+            },
+            {
+                "id": 9744227,
+                "name": "VCP - Technical Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:55:25Z",
+                "updated_at": "2020-08-13T17:54:52Z",
+                "default_hourly_rate": 190
+            },
+            {
+                "id": 9744224,
+                "name": "VCP - Principal Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:57Z",
+                "updated_at": "2020-08-13T17:54:04Z",
+                "default_hourly_rate": 190
+            },
+            {
+                "id": 9744221,
+                "name": "VCP - Senior Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:35Z",
+                "updated_at": "2020-08-13T17:54:18Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 9744219,
+                "name": "VCP - Project Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:10Z",
+                "updated_at": "2020-08-13T17:54:10Z",
+                "default_hourly_rate": 130
+            },
+            {
+                "id": 9744218,
+                "name": "VCP - Associate Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:53:52Z",
+                "updated_at": "2020-08-13T17:53:45Z",
+                "default_hourly_rate": 90
+            },
+            {
+                "id": 9744207,
+                "name": "VCP - Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:53:29Z",
+                "updated_at": "2020-08-13T17:54:37Z",
+                "default_hourly_rate": 120
+            },
+            {
+                "id": 9699294,
+                "name": "Production Support",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-04-29T23:24:09Z",
+                "updated_at": "2018-04-29T23:24:09Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9631299,
+                "name": "Web Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-04-17T12:50:35Z",
+                "updated_at": "2018-04-17T12:50:35Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9564508,
+                "name": "Partner",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-04-05T18:53:20Z",
+                "updated_at": "2018-04-05T18:53:20Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9500203,
+                "name": "Project Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-03-26T14:48:55Z",
+                "updated_at": "2018-03-26T14:48:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9500202,
+                "name": "Senior DevOps Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-03-26T14:48:55Z",
+                "updated_at": "2024-08-13T18:45:10Z",
+                "default_hourly_rate": 205
+            },
+            {
+                "id": 9500201,
+                "name": "Principal Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-03-26T14:48:55Z",
+                "updated_at": "2018-03-26T14:48:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9318790,
+                "name": "Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-02-23T20:01:38Z",
+                "updated_at": "2024-08-13T18:48:03Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 9316324,
+                "name": "All Hands",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-02-23T14:00:06Z",
+                "updated_at": "2018-02-23T14:00:06Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9178930,
+                "name": "Web Design",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-31T23:52:55Z",
+                "updated_at": "2018-01-31T23:52:55Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9150385,
+                "name": "Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-27T15:20:22Z",
+                "updated_at": "2018-01-27T15:20:22Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9006835,
+                "name": "Project Coordinator",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-04T13:26:15Z",
+                "updated_at": "2018-01-04T13:26:15Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9006834,
+                "name": "Associate Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-04T13:26:14Z",
+                "updated_at": "2018-01-04T13:26:14Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 9006833,
+                "name": "Senior Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-04T13:26:14Z",
+                "updated_at": "2024-08-13T18:45:28Z",
+                "default_hourly_rate": 235
+            },
+            {
+                "id": 8881054,
+                "name": "System Admin",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-12-04T19:18:19Z",
+                "updated_at": "2017-12-04T19:18:19Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8802759,
+                "name": "Curriculum",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-16T16:36:45Z",
+                "updated_at": "2017-11-16T16:36:45Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8802154,
+                "name": "Non-Billable",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-16T15:10:41Z",
+                "updated_at": "2017-11-16T15:10:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8802153,
+                "name": "Enterprise Architecture",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-16T15:10:41Z",
+                "updated_at": "2017-11-16T15:10:41Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8784599,
+                "name": "Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-13T17:49:28Z",
+                "updated_at": "2020-08-13T17:55:16Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8784596,
+                "name": "Sales",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-13T17:49:01Z",
+                "updated_at": "2020-08-13T17:55:22Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8766305,
+                "name": "Solution Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-09T21:29:52Z",
+                "updated_at": "2024-08-13T18:47:21Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 8758351,
+                "name": "Unpaid Internship",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-08T15:41:44Z",
+                "updated_at": "2020-08-13T17:53:39Z",
+                "default_hourly_rate": 60
+            },
+            {
+                "id": 8758350,
+                "name": "Paid Internship",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-08T15:41:44Z",
+                "updated_at": "2020-08-13T17:53:26Z",
+                "default_hourly_rate": 60
+            },
+            {
+                "id": 8693995,
+                "name": "Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-10-26T21:25:49Z",
+                "updated_at": "2017-10-26T21:25:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8693994,
+                "name": "Senior Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-10-26T21:25:49Z",
+                "updated_at": "2017-10-26T21:25:49Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8487983,
+                "name": "Software Audit",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-15T21:48:54Z",
+                "updated_at": "2017-09-15T21:48:54Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8482916,
+                "name": "Architecture Guidance",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-14T22:46:53Z",
+                "updated_at": "2017-09-14T22:46:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8482915,
+                "name": "DBA",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-14T22:46:53Z",
+                "updated_at": "2017-09-14T22:46:53Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8464335,
+                "name": "Database",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:24:28Z",
+                "updated_at": "2017-09-13T14:24:28Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8464269,
+                "name": "Vacation",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2017-09-13T14:16:20Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8464268,
+                "name": "Business Development",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:55:09Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464267,
+                "name": "Project Management",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2024-07-30T16:32:30Z",
+                "default_hourly_rate": null
+            },
+            {
+                "id": 8464266,
+                "name": "Marketing",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:20Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464265,
+                "name": "Programming",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:32Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464264,
+                "name": "Graphic Design",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:12Z",
+                "default_hourly_rate": 0
+            }
+        ],
+        "filteredTasks": [
+            {
+                "id": 23316273,
+                "name": "Head of Product",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-10-09T21:16:14Z",
+                "updated_at": "2024-10-09T21:21:20Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 23179623,
+                "name": "Manager of Product",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-09-13T21:08:14Z",
+                "updated_at": "2024-10-09T21:21:00Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 22674684,
+                "name": "Senior Copywriter",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-31T19:38:31Z",
+                "updated_at": "2024-08-13T18:44:32Z",
+                "default_hourly_rate": 100
+            },
+            {
+                "id": 22632435,
+                "name": "Senior Delivery Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-07-30T17:11:14Z",
+                "default_hourly_rate": 195
+            },
+            {
+                "id": 22632434,
+                "name": "Associate Delivery Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-10-02T20:17:40Z",
+                "default_hourly_rate": 105
+            },
+            {
+                "id": 22632433,
+                "name": "Delivery Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-23T20:06:11Z",
+                "updated_at": "2024-07-30T17:10:07Z",
+                "default_hourly_rate": 155
+            },
+            {
+                "id": 22612041,
+                "name": "Senior Product Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-20T15:53:48Z",
+                "updated_at": "2024-07-30T17:11:27Z",
+                "default_hourly_rate": 285
+            },
+            {
+                "id": 22612040,
+                "name": "Product Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-05-20T15:53:48Z",
+                "updated_at": "2024-07-30T17:11:01Z",
+                "default_hourly_rate": 180
+            },
+            {
+                "id": 22321976,
+                "name": "Engineering Manager",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2024-03-21T14:48:26Z",
+                "updated_at": "2024-07-30T17:10:49Z",
+                "default_hourly_rate": 260
+            },
+            {
+                "id": 20965013,
+                "name": "User Interface Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2023-07-06T13:59:48Z",
+                "updated_at": "2024-08-13T18:43:50Z",
+                "default_hourly_rate": 170
+            },
+            {
+                "id": 19521581,
+                "name": "Director of Product",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:39Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 19521580,
+                "name": "Director of Design",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:29Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 19521579,
+                "name": "Director of Engineering",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2022-10-10T19:53:08Z",
+                "updated_at": "2024-07-30T17:10:33Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 18118092,
+                "name": "BuyDRM",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2022-01-20T19:59:10Z",
+                "updated_at": "2022-01-20T20:13:06Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 17242516,
+                "name": "Marketing Lead",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-09-01T14:29:53Z",
+                "updated_at": "2021-09-01T14:29:53Z",
+                "default_hourly_rate": 235
+            },
+            {
+                "id": 17242512,
+                "name": "Product Owner",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2021-09-01T14:29:37Z",
+                "updated_at": "2022-08-22T19:45:00Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 14774604,
+                "name": "Senior User Experience Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-06-30T22:48:25Z",
+                "updated_at": "2024-08-13T18:46:21Z",
+                "default_hourly_rate": 210
+            },
+            {
+                "id": 14040697,
+                "name": "Senior Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-09T17:12:10Z",
+                "updated_at": "2024-08-13T18:46:57Z",
+                "default_hourly_rate": 195
+            },
+            {
+                "id": 14008792,
+                "name": "Senior User Interface Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2020-03-04T18:12:51Z",
+                "updated_at": "2024-08-13T18:46:05Z",
+                "default_hourly_rate": 210
+            },
+            {
+                "id": 13006120,
+                "name": "Senior Quality Engineer",
+                "billable_by_default": true,
+                "is_default": true,
+                "is_active": true,
+                "created_at": "2019-09-25T21:17:34Z",
+                "updated_at": "2024-07-30T17:11:37Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 9744277,
+                "name": "VCP - Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:58:50Z",
+                "updated_at": "2020-08-13T17:54:59Z",
+                "default_hourly_rate": 110
+            },
+            {
+                "id": 9744267,
+                "name": "VCP - Designer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:57:58Z",
+                "updated_at": "2020-08-13T17:53:51Z",
+                "default_hourly_rate": 130
+            },
+            {
+                "id": 9744244,
+                "name": "VCP - Solution Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:56:15Z",
+                "updated_at": "2020-08-13T17:54:47Z",
+                "default_hourly_rate": 215
+            },
+            {
+                "id": 9744232,
+                "name": "VCP - Principal Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:55:52Z",
+                "updated_at": "2020-08-13T17:53:58Z",
+                "default_hourly_rate": 205
+            },
+            {
+                "id": 9744227,
+                "name": "VCP - Technical Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:55:25Z",
+                "updated_at": "2020-08-13T17:54:52Z",
+                "default_hourly_rate": 190
+            },
+            {
+                "id": 9744224,
+                "name": "VCP - Principal Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:57Z",
+                "updated_at": "2020-08-13T17:54:04Z",
+                "default_hourly_rate": 190
+            },
+            {
+                "id": 9744221,
+                "name": "VCP - Senior Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:35Z",
+                "updated_at": "2020-08-13T17:54:18Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 9744219,
+                "name": "VCP - Project Manager",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:54:10Z",
+                "updated_at": "2020-08-13T17:54:10Z",
+                "default_hourly_rate": 130
+            },
+            {
+                "id": 9744218,
+                "name": "VCP - Associate Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:53:52Z",
+                "updated_at": "2020-08-13T17:53:45Z",
+                "default_hourly_rate": 90
+            },
+            {
+                "id": 9744207,
+                "name": "VCP - Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-05-07T14:53:29Z",
+                "updated_at": "2020-08-13T17:54:37Z",
+                "default_hourly_rate": 120
+            },
+            {
+                "id": 9500202,
+                "name": "Senior DevOps Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-03-26T14:48:55Z",
+                "updated_at": "2024-08-13T18:45:10Z",
+                "default_hourly_rate": 205
+            },
+            {
+                "id": 9318790,
+                "name": "Web Developer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-02-23T20:01:38Z",
+                "updated_at": "2024-08-13T18:48:03Z",
+                "default_hourly_rate": 165
+            },
+            {
+                "id": 9006833,
+                "name": "Senior Software Engineer",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2018-01-04T13:26:14Z",
+                "updated_at": "2024-08-13T18:45:28Z",
+                "default_hourly_rate": 235
+            },
+            {
+                "id": 8784599,
+                "name": "Management",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-13T17:49:28Z",
+                "updated_at": "2020-08-13T17:55:16Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8784596,
+                "name": "Sales",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-13T17:49:01Z",
+                "updated_at": "2020-08-13T17:55:22Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8766305,
+                "name": "Solution Architect",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-09T21:29:52Z",
+                "updated_at": "2024-08-13T18:47:21Z",
+                "default_hourly_rate": 325
+            },
+            {
+                "id": 8758351,
+                "name": "Unpaid Internship",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-08T15:41:44Z",
+                "updated_at": "2020-08-13T17:53:39Z",
+                "default_hourly_rate": 60
+            },
+            {
+                "id": 8758350,
+                "name": "Paid Internship",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-11-08T15:41:44Z",
+                "updated_at": "2020-08-13T17:53:26Z",
+                "default_hourly_rate": 60
+            },
+            {
+                "id": 8464268,
+                "name": "Business Development",
+                "billable_by_default": false,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:55:09Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464266,
+                "name": "Marketing",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:20Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464265,
+                "name": "Programming",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:32Z",
+                "default_hourly_rate": 0
+            },
+            {
+                "id": 8464264,
+                "name": "Graphic Design",
+                "billable_by_default": true,
+                "is_default": false,
+                "is_active": true,
+                "created_at": "2017-09-13T14:16:20Z",
+                "updated_at": "2020-08-13T17:53:12Z",
+                "default_hourly_rate": 0
+            }
+        ],
+        "error": ""
     }
 };
 

@@ -80,4 +80,7 @@ tr:hover {
 
 .entry-form .entry-form-inputs {
   width: 100%;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+  padding: 10px;
 }
