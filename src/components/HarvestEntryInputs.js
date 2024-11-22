@@ -11,10 +11,11 @@ const HarvestEntryInputs = ({
     projectNotes,
     suggestedMinutes,
     spentDate,
-    userId
+    userId,
+    actualMinutes,
+    minutes
 }) => {
 
-    
     return (
         <div key={filteredProject.code} className="entry-form-inputs">
             <h5>{filteredProject.code}</h5>
@@ -23,8 +24,9 @@ const HarvestEntryInputs = ({
             <input type="hidden" className="suggestedMinutes" name="suggestedMinutes" value={suggestedMinutes || 0} />
             <input type="hidden" className="spentDate" name="spentDate" value={spentDate} />
             <input type="hidden" className="userId" name="userId" value={userId} />
-            <InputGroup>    
-                <FloatingLabel>Confirmed Minutes (suggested minutes: {suggestedMinutes})</FloatingLabel>
+            <input type="hidden" className="minutes" name="minutes" value={minutes} />
+            <InputGroup>
+                <FloatingLabel>Confirmed Minutes (suggested: {suggestedMinutes}, actual: {actualMinutes})</FloatingLabel>
                 <FormControl
                     type="number"
                     placeholder={suggestedMinutes || 0}

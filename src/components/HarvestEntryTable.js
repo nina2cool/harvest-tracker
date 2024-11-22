@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-const HarvestEntryTable = ({ newHarvestEntries }) => {
+const HarvestEntryTable = ({ harvestEntries }) => {
     return (
         <Table striped bordered hover>
             <thead>
@@ -15,13 +15,13 @@ const HarvestEntryTable = ({ newHarvestEntries }) => {
                 </tr>
             </thead>
             <tbody>
-                {newHarvestEntries.map((entry, index) => (
+                {harvestEntries.map((entry, index) => (
                     <tr key={index}>
                         <td>{entry.user_id}</td>
-                        <td>{entry.project_id}</td>
+                        <td>{entry.project_id}<br></br>{entry.projectCode && `(${entry.projectCode})`}</td>
                         <td>{entry.task_id}</td>
                         <td>{entry.spent_date}</td>
-                        <td>{entry.hours}</td>
+                        <td>{parseFloat(entry.hours).toFixed(2)} ({Math.round(entry.hours * 60)} minutes)</td>
                         <td>{entry.notes}</td>
                     </tr>
                 ))}

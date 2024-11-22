@@ -59,6 +59,10 @@ tr:hover {
   background-color: #f1f1f1;
 }
 
+.user-table-header {
+  text-align: right;
+}
+
 .selected-row {
   background-color: lightyellow; /* Highlight color */
 }
@@ -82,5 +86,23 @@ tr:hover {
   width: 100%;
   margin-bottom: 20px;
   background-color: aliceblue;
+  padding: 10px;
+}
+
+.bill-to-client {
+  background-color: #FFC107;;
+}
+
+.one-x-one {
+  background-color: #0DCAF0;
+}
+
+.gray-out {
+  color: #ccc;
+}
+
+.time-spent-container {
+  margin: 40px 0;
+  border: 1px solid gray;
   padding: 10px;
 }

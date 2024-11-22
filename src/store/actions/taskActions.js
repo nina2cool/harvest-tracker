@@ -26,9 +26,9 @@ export const fetchTasks = () => {
                 ? `http://localhost:3002/api/harvest-tasks`
                 : `https://harvest-tracker-api.onrender.com/api/harvest-tasks`;
 
-            console.log("API URL:", apiUrl);
+            console.log("Fetch Tasks API URL:", apiUrl);
             const response = await fetch(apiUrl);
-            console.log("Response:", response);
+            console.log("Fetch Tasks Response:", response);
             const data = await response.json();
             dispatch(fetchTasksSuccess(data));
         } catch (error) {

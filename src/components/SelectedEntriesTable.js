@@ -5,6 +5,7 @@ import { setSplitTimeEntries } from '../store/actions/timeEntriesActions';
 import Loader from './Loader';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { isEntryType, sortEntriesByUserFirstName } from '../utils/functions';
 
 const SelectedEntriesTable = ({ selectedHarvestEntries }) => {
     const dispatch = useDispatch();
@@ -82,9 +83,10 @@ const SelectedEntriesTable = ({ selectedHarvestEntries }) => {
     });
 
     const handleReadyToSplit = () => {
-        // Navigate to time-entries-page-4
         navigate('/time-entries-step-4');
     };
+
+
 
     return (
         <div>
@@ -93,33 +95,40 @@ const SelectedEntriesTable = ({ selectedHarvestEntries }) => {
                 <table className="selected-entries-table">
                     <thead>
                         <tr>
+                            <th>Select entries</th>
                             <th>Project Code</th>
                             <th>Notes</th>
                             <th>Hours</th>
-                            {entryType === '1x1' && <th>Split This Time</th>} {/* New column for split time */}
-                            {entryType === '1x1' && <th>Split Type</th>} {/* New column for split type */}
+                            {entryType === '1x1' && <th>Select User</th>} {/* New column for split time */}
                         </tr>
                     </thead>
                     <tbody>
-                        {selectedHarvestEntries.map(entry => (
+                        {selectedHarvestEntries.map(entry => {
+                            
+                            const entryType = isEntryType(entry, "1x1") ? "1x1" : isEntryType(entry, "bill to client") ? "bill to client" : "other";
+                            
+                            return (
                             <tr key={entry.id}>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        checked={splitTimeEntries.some(e => e.originalEntry.id === entry.id)} // Check if the split time checkbox is selected
+                                        onChange={() => handleSplitTimeChange(entry.id)} // Handle split time checkbox change
+                                    />
+                                </td>
                                 <td>{entry.project.code}</td>
                                 <td>{entry.notes}</td>
                                 <td>{entry.hours}</td>
-                                {entryType === '1x1' && (
+                                
                                     <td>
-                                        <input
-                                            type="checkbox"
-                                            checked={splitTimeEntries.some(e => e.originalEntry.id === entry.id)} // Check if the split time checkbox is selected
-                                            onChange={() => handleSplitTimeChange(entry.id)} // Handle split time checkbox change
-                                        />
-                                        {splitTimeEntries.some(e => e.originalEntry.id === entry.id) && ( // Show dropdown if split time is checked
+                                        
+                                        {entryType === '1x1' && splitTimeEntries.some(e => e.originalEntry.id === entry.id) && ( // Show dropdown if split time is checked
                                             <select
                                                 value={splitTimeEntries.find(e => e.originalEntry.id === entry.id)?.correspondingUserId || ''} // Set the value of the dropdown
                                                 onChange={(e) => handleUserChange(entry.id, e.target.value)} // Handle user selection
                                             >
                                                 <option value="">Select User</option>
-                                                {users.map(user => (
+                                                {sortEntriesByUserFirstName(users).map(user => (
                                                     <option key={user.id} value={user.id}>
                                                         {user.first_name} {/* Assuming user has an id and first_name */}
                                                     </option>
@@ -127,29 +136,13 @@ const SelectedEntriesTable = ({ selectedHarvestEntries }) => {
                                             </select>
                                         )}
                                     </td>
-                                )}
-                                {entryType === '1x1' && (
-                                    <td>
-                                        {splitTimeEntries.some(e => e.originalEntry.id === entry.id) && ( // Show split type dropdown if split time is checked
-                                            <select
-                                                value={splitTimeEntries.find(e => e.originalEntry.id === entry.id)?.splitType || 'proportional'} // Set the value of the dropdown
-                                                onChange={(e) => handleSplitTypeChange(entry.id, e.target.value)} // Handle split type selection
-                                            >
-                                                <option value="proportional">Proportional</option>
-                                                <option value="custom">Custom</option>
-                                            </select>
-                                        )}
-                                    </td>
-                                )}
                             </tr>
-                        ))}
+                        );
+                        })}
                     </tbody>
                 </table>
             ) : (
                 <p>No selected entries found.</p>
-            )}
-            {entryType === '1x1' && allUsersSelected && ( // Show button if all required users are selected
-                <Button variant="success" onClick={handleReadyToSplit}>Ready to Split</Button> // Add onClick handler
             )}
         </div>
     );
