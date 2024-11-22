@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'; // Import useDispatch
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import SelectedEntriesTable from '../components/SelectedEntriesTable';
-import { setAdjustedMinutesByUser } from '../store/actions/timeEntriesActions'; // Import the new action
 import { Button } from 'react-bootstrap';
 import { roundToNearestFiveMinutes } from '../utils/functions';
 
 const TimeEntriesPage3 = () => {
-    const dispatch = useDispatch(); // Initialize dispatch
+
+    const navigate = useNavigate(); // Initialize useNavigate
     const selectedHarvestEntries = useSelector(state => state.timeEntries.selectedHarvestEntries); // Get selected entries from Redux store
     const billableHours = useSelector(state => state.timeEntries.billableHours); // Get billable hours from Redux store
     const entryType = useSelector(state => state.timeEntries.entryType); // Get entry type from Redux store
     const [showBillableHours, setShowBillableHours] = useState(false); // State to manage visibility of BillableHours
-    const selectedUserId = useSelector(state => state.timeEntries.selectedUserId); // Get selected user ID from Redux store
+    // const selectedUserId = useSelector(state => state.timeEntries.selectedUserId); // Get selected user ID from Redux store
 
     const handleCalculateTimeSplit = () => {
-        setShowBillableHours(true); // Show the BillableHours component when the button is pressed
+        // setShowBillableHours(true); // Show the BillableHours component when the button is pressed
+        entryType === "1x1" ? navigate('/time-entries-step-4') : navigate('/time-entries-step-6');
     };
 
     // Calculate total hours from selected entries
@@ -56,27 +58,15 @@ const TimeEntriesPage3 = () => {
     // Calculate total adjusted minutes after filtering
     const totalFinalAdjustedMinutes = filteredAdjustedBillableHours.reduce((sum, project) => sum + project.adjustedMinutes, 0);
 
-    // Function to save adjusted minutes per project for the selected user
-    const handleSaveAdjustedMinutes = () => {
-        const adjustedMinutesPerProject = filteredAdjustedBillableHours.map(project => ({
-            projectCode: project.projectCode,
-            adjustedMinutes: project.adjustedMinutes,
-            finalMinutes: project.adjustedMinutes - project.differenceRemoved, // Calculate final minutes
-        }));
-        dispatch(setAdjustedMinutesByUser(selectedUserId, adjustedMinutesPerProject)); // Dispatch action to save adjusted minutes
-    };
-
     return (
         <div>
             {selectedHarvestEntries && selectedHarvestEntries.length > 0 ? (
                 <>
-                    <SelectedEntriesTable selectedHarvestEntries={selectedHarvestEntries} /> {/* Pass selected entries to the component */}
-                    {entryType === 'bill to client' && ( // Show buttons only if entryType is billable
-                        <>
+                    <SelectedEntriesTable selectedHarvestEntries={selectedHarvestEntries} />
+                       
                             <Button onClick={handleCalculateTimeSplit}>Calculate time split</Button> {/* Button to calculate time split */}
-                            <Button onClick={handleSaveAdjustedMinutes}>Save Adjusted Minutes</Button> {/* Button to save adjusted minutes */}
-                        </>
-                    )}
+                        
+                
                     {showBillableHours && (
                         <>
                             <h4>Adjusted Billable Minutes:</h4> {/* Updated title */}

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { useDispatch } from 'react-redux'; // Import useDispatch
 import { setselectedHarvestEntries, setEntryType } from '../store/actions/timeEntriesActions'; // Import the actions
-import { Button } from 'react-bootstrap';
+import { Button, FormCheck } from 'react-bootstrap';
+import { isEntryType } from '../utils/functions';
 
 const TimeEntriesList = ({ userTimeEntries }) => {
 
@@ -12,7 +13,8 @@ const TimeEntriesList = ({ userTimeEntries }) => {
     const dispatch = useDispatch(); // Initialize dispatch
     const [selectedHarvestEntries, setselectedHarvestEntriesState] = useState({});
 
-    const handleCheckboxChange = (entryId) => {
+    const handleCheckboxChange = (entryId, entryType) => {
+        dispatch(setEntryType(entryType));
         setselectedHarvestEntriesState(prevState => ({
             ...prevState,
             [entryId]: !prevState[entryId] // Toggle the selected state
@@ -85,12 +87,16 @@ const TimeEntriesList = ({ userTimeEntries }) => {
         <div>
             <h2>Time Entries</h2>
             <h3>Total Hours for All Entries: {totalHours} hours</h3> {/* Display total hours for all entries */}
-            <Button variant="primary" onClick={handleSelectAll1x1}>Select All 1x1 Entries</Button> {/* Button to select all entries with "1x1" in the description */}
-            <Button variant="primary" onClick={handleSelectAllBillToClient}>Select All "Bill to Client" Entries</Button> {/* Button to select all entries with "bill to client" in task.name */}
+            <Button variant="info" onClick={handleSelectAll1x1}>Select All 1x1 Entries</Button> {/* Button to select all entries with "1x1" in the description */}
+            <Button variant="warning" onClick={handleSelectAllBillToClient}>Select All "Bill to Client" Entries</Button> {/* Button to select all entries with "bill to client" in task.name */}
             <Button variant="secondary" onClick={handleClearSelections}>Clear All Selections</Button> {/* Button to clear all selected checkboxes */}
             {Object.keys(groupedEntries).length > 0 ? (
                 Object.keys(groupedEntries).map(date => {
+
                     const dailyTotalHours = groupedEntries[date].totalHours.toFixed(2); // Round daily total hours to two decimal places
+
+
+
                     return (
                         <div key={date}>
                             <h3>{date} - Total Hours for This Day: {dailyTotalHours} hours</h3> {/* Display total hours for the day */}
@@ -101,23 +107,33 @@ const TimeEntriesList = ({ userTimeEntries }) => {
                                         <th>Project Code</th>
                                         <th>Notes</th>
                                         <th>Hours</th>
+                                        <th>Entry Type</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {groupedEntries[date].entries.map(entry => (
-                                        <tr key={entry.id} className={selectedHarvestEntries[entry.id] ? 'selected-row' : ''}>
+                                    {groupedEntries[date].entries.map(entry => {
+
+                                        const entryType = isEntryType(entry, "1x1") ? "1x1" : isEntryType(entry, "bill to client") ? "bill to client" : "other";
+                                        // Determine the class to apply based on entry type
+                                        const rowClass = entryType === "1x1" ? 'one-x-one' : entryType === "bill to client" ? 'bill-to-client' : '';
+
+                                        return (
+                                        <tr key={entry.id} className={`${selectedHarvestEntries[entry.id] ? 'selected-row' : ''} ${rowClass}`}>
                                             <td>
-                                                <input
+                                                <FormCheck
                                                     type="checkbox"
                                                     checked={!!selectedHarvestEntries[entry.id]} // Check if the entry is selected
-                                                    onChange={() => handleCheckboxChange(entry.id)} // Handle checkbox change
+                                                    onChange={() => handleCheckboxChange(entry.id, entryType)} // Handle checkbox change
+                                                    disabled={entryType === "other"} // Disable checkbox if entry type is "other"
                                                 />
                                             </td>
                                             <td>{entry.project.code}</td>
                                             <td>{entry.notes}</td>
                                             <td>{entry.hours}</td>
-                                        </tr>
-                                    ))}
+                                            <td>{entryType}</td>
+                                            </tr>
+                                        );
+                                    })}
                                 </tbody>
                             </table>
                         </div>

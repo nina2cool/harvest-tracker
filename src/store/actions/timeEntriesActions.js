@@ -1,33 +1,3 @@
-// export const fetchTimeEntriesByUser = (userId, startDate, endDate) => {
-//     return async (dispatch) => {
-//         dispatch({ type: 'FETCH_TIME_ENTRIES_REQUEST' });
-
-//         try {
-//             // Construct the API URL with query parameters
-//             const apiUrl = process.env.ENV === "dev" 
-//                 ? `http://localhost:3002/api/get-harvest-time-entries-by-user?user_id=${userId}&from=${startDate}&to=${endDate}`
-//                 : `https://harvest-tracker-api.onrender.com/api/get-harvest-time-entries-by-user?user_id=${userId}&from=${startDate}&to=${endDate}`;
-
-//             console.log("API URL:", apiUrl);
-            
-//             const response = await fetch(apiUrl);
-//             const data = await response.json();
-//             console.log('API Response:', data); // Corrected to log data instead of response.data
-
-//             if (response.ok) {
-//                 dispatch({ 
-//                     type: 'FETCH_TIME_ENTRIES_SUCCESS', 
-//                     payload: { source: 'user', data: data.time_entries } // Include source in payload
-//                 });
-//             } else {
-//                 dispatch({ type: 'FETCH_TIME_ENTRIES_FAILURE', payload: data.error });
-//             }
-//         } catch (error) {
-//             dispatch({ type: 'FETCH_TIME_ENTRIES_FAILURE', payload: error.message });
-//         }
-//     };
-// };
-
 export const fetchTimeEntriesByDate = (startDate, endDate) => {
     console.log("fetchTimeEntriesByDate", startDate, endDate);
 
@@ -39,11 +9,11 @@ export const fetchTimeEntriesByDate = (startDate, endDate) => {
                 ? `http://localhost:3002/api/get-harvest-time-entries-by-date?from=${startDate}&to=${endDate}`
                 : `https://harvest-tracker-api.onrender.com/api/get-harvest-time-entries-by-date?from=${startDate}&to=${endDate}`;
 
-            console.log("API URL:", apiUrl);
+            console.log("Fetch Time Entries by Date API URL:", apiUrl);
             
             const response = await fetch(apiUrl);
             const data = await response.json();
-            console.log('API Response:', data);
+            console.log('Fetch Time Entries by Date Response:', response);
 
             if (response.ok) {
                 dispatch({ 
@@ -112,5 +82,12 @@ export const SET_SPLIT_TIME_ENTRIES = 'SET_SPLIT_TIME_ENTRIES';
 
 export const setSplitTimeEntries = ( entry) => ({
     type: SET_SPLIT_TIME_ENTRIES,
+    payload: entry,
+});
+
+export const SET_HARVEST_ENTRIES = 'SET_HARVEST_ENTRIES';
+
+export const setHarvestEntries = (entry) => ({
+    type: SET_HARVEST_ENTRIES,
     payload: entry,
 });

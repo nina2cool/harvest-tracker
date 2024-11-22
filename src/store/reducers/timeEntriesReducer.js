@@ -1,4 +1,4 @@
-import { SET_SELECTED_ENTRIES, SET_BILLABLE_HOURS, SET_SELECTED_WEEK, SET_ENTRY_TYPE, SET_TIME_ENTRIES_BY_USER, SET_ADJUSTED_MINUTES_BY_USER, SET_SELECTED_USER_ID, SET_SPLIT_TIME_ENTRIES } from '../actions/timeEntriesActions';
+import { SET_SELECTED_ENTRIES, SET_BILLABLE_HOURS, SET_SELECTED_WEEK, SET_ENTRY_TYPE, SET_TIME_ENTRIES_BY_USER, SET_ADJUSTED_MINUTES_BY_USER, SET_SELECTED_USER_ID, SET_SPLIT_TIME_ENTRIES, SET_HARVEST_ENTRIES } from '../actions/timeEntriesActions';
 
 const initialState = {
     timeEntriesByUser: [],
@@ -12,6 +12,7 @@ const initialState = {
     adjustedMinutesByUser: [],
     selectedUserId: null,
     splitTimeEntries: [],
+    harvestEntries: [],
 };
 
 const timeEntriesReducer = (state = initialState, action) => {
@@ -49,6 +50,7 @@ const timeEntriesReducer = (state = initialState, action) => {
                 entryType: action.payload, // Update the entry type
             };
         case SET_TIME_ENTRIES_BY_USER:
+            console.log("SET_TIME_ENTRIES_BY_USER", action.payload);
             return {
                 ...state,
                 timeEntriesByUser: action.payload, // Update the time entries by user
@@ -67,6 +69,11 @@ const timeEntriesReducer = (state = initialState, action) => {
             return {
                 ...state,
                 splitTimeEntries: action.payload, // Ensure this is always an array
+            };
+        case SET_HARVEST_ENTRIES:
+            return {
+                ...state,
+                harvestEntries: [...state.harvestEntries, ...action.payload], // Add new entries to the existing array
             };
         default:
             return state;
