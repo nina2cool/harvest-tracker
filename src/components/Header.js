@@ -15,6 +15,7 @@ const Header = () => {
                         <Nav.Link href="/tasks">Harvest Tasks</Nav.Link>
                         <Nav.Link href="/jira-tickets">Jira Tickets</Nav.Link>
                         <Nav.Link href="/jira-users">Jira Users</Nav.Link>
+                        <Nav.Link href="/budget">Budgets</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

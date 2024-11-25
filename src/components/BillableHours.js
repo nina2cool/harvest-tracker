@@ -31,15 +31,15 @@ const BillableHours = ({ billableHours, calculatedMinutes }) => {
             }
         }));
 
-        // setTasksSelected(prev => ({
-        //     ...prev,
-        //     [entryId]: true
-        // }));
+        setTasksSelected(prev => ({
+            ...prev,
+            [projectCode]: true
+        }));
     };
 
     const handleInputChange = (e, projectCode, value) => {
-        // console.log("projectCode", projectCode);
-        // console.log("value", value);
+        console.log("projectCode", projectCode);
+        console.log("value", value);
         
         // const suggestedMinutesInput = event.target.closest('.entry-form-inputs').querySelector('input[name="suggestedMinutes"]');
         // const suggestedMinutes = parseInt(suggestedMinutesInput.value) || 0; // Default to 0 if not found
@@ -96,7 +96,7 @@ const BillableHours = ({ billableHours, calculatedMinutes }) => {
                         placeholder={allocatedMinutes}
                         required
                         className="confirmed-minutes"
-                        value={calculatedMinutes[projectCode]?.confirmedMinutes || ''}
+                        value={calculatedMinutes[projectCode]?.confirmedMinutes}
                         onChange={(e) => handleInputChange(e, projectCode, e.target.value)}
                     />
                 </InputGroup>
@@ -123,7 +123,7 @@ const BillableHours = ({ billableHours, calculatedMinutes }) => {
         );
     };
     
-    // console.log("inputValues", inputValues);
+    console.log("inputValues", inputValues);
     // console.log("billableHours", billableHours);
 
     return (
