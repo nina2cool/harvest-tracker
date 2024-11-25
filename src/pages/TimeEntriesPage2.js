@@ -6,6 +6,7 @@ import TimeEntriesList from '../components/TimeEntriesList';
 import Loader from '../components/Loader'; // Import the Loader component
 import { Button, FormSelect, FloatingLabel } from 'react-bootstrap';
 import { sortEntriesByUserFirstName } from '../utils/functions';
+
 const TimeEntriesPage2 = () => {
     
     const dispatch = useDispatch();

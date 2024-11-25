@@ -13,6 +13,7 @@ import TasksPage from './pages/TasksPage'; // Import the new component
 import JiraTicketsPage from './pages/JiraTicketsPage'; // Import the new component
 import JiraUsersPage from './pages/JiraUsersPage'; // Import the new component
 import TimeSpentPage from './pages/TimeSpentPage'; // Import the new component
+import BudgetPage from './pages/Budget'; // Import the new component
 import { Container } from 'react-bootstrap';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/jira-tickets" element={<JiraTicketsPage />} />
             <Route path="/jira-users" element={<JiraUsersPage />} />
             <Route path="/time-spent" element={<TimeSpentPage />} />
+            <Route path="/budget" element={<BudgetPage />} />
             {/* Other routes can be added here */}
           </Routes>
         </div>
