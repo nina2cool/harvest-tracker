@@ -1,0 +1,58 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Commands
+
+- `npm run dev` - Start development server (localhost:3000)
+- `npm run build` - Build for production
+- `npm start` - Serve production build (requires build first)
+- `npm test` - Run tests in watch mode
+- `npm test -- --testPathPattern="<pattern>"` - Run specific test file
+- `npm run format` - Format code with Prettier (uses `@inventivegroup/prettier-config`)
+
+## Architecture
+
+"Time Splitter" - a React 18 internal tool for splitting and managing Harvest time entries across projects, with Jira integration for ticket tracking.
+
+### State Management (Redux + redux-thunk)
+
+Store slices in `src/store/reducers/`:
+- `timeEntries` - Harvest time entries, billable hours, selected week, split entries
+- `users` - Harvest users
+- `projects` - Harvest projects
+- `tasks` - Harvest tasks
+- `jira` - Jira tickets, users, projects, issues
+
+Async action pattern: `FETCH_*_REQUEST` → `FETCH_*_SUCCESS` / `FETCH_*_FAILURE`
+
+Logger middleware (`src/store/loggerMiddleware.js`) logs state after every action for debugging.
+
+### API Integration
+
+Backend API: `https://harvest-tracker-api.onrender.com` (production) or `localhost:3002` (development)
+
+Environment check uses `process.env.ENV === 'dev'` - note the .env file uses `ENVIRONMENT` key.
+
+Key endpoints:
+- `GET /api/get-harvest-time-entries-by-date?from=&to=`
+- `GET /api/harvest-users`, `/api/harvest-projects`, `/api/harvest-tasks`
+- `POST /api/create-harvest-time-entries`
+- `GET /api/jira-users`, `/api/jira-projects`, `/api/jira-search`, `/api/jira-person-issues`
+
+### Business Logic (`src/utils/functions.js`)
+
+- `numHoursToCrossOff = 1` - Projects with ≤1 hour are excluded from billable percentage calculations
+- Internal client IDs filtered out: `11188314` (Inventive Group), `7044177` (Inventive Projects)
+- `calculateBillableHours()` - Aggregates billable hours by project code
+- `organizeEntriesByUser()` - Groups time entries by user with project breakdown
+
+### Role Mapping (`src/utils/roleMapping.js`)
+
+Maps Harvest user IDs to employee names and primary roles (QA, SA, SSE, WebDev, DevOps, Product Manager, Design, etc.).
+
+### Multi-Step Time Entry Workflow
+
+`/time-entries` (Step 1: fetch by date range) → `/time-entries-step-2` → ... → `/time-entries-step-5` (submit entries)
+
+Each step page passes state via Redux; navigation uses react-router-dom's `useNavigate`.
